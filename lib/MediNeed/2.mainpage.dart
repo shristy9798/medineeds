@@ -60,8 +60,7 @@ class _mainpageState extends State<mainpage> {
                           mainAxisSize: MainAxisSize.min,
                           children: [
                             Ink.image(
-                              image: NetworkImage(
-                                  "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4_GVbDrGOeTKVD-KImhZMz_O6BPyj1YmiBg&usqp=CAU"),
+                              image: AssetImage("images/fever.png"),
                               height: 100,
                               width: 100,
                               fit: BoxFit.cover,
