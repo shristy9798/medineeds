@@ -20,7 +20,7 @@ class login extends StatefulWidget {
 class _loginState extends State<login> {
   var st = true;
 
-  String? nameerror = null;
+  String? nameer = null;
 
   TextEditingController namecontrol = TextEditingController();
 
@@ -50,7 +50,7 @@ class _loginState extends State<login> {
                     TextField(
                       controller: namecontrol,
                       decoration: InputDecoration(
-                          errorText: nameerror,
+                          errorText: nameer,
                           labelText: "Name",
                           hintText: "enter your name",
                           labelStyle:
@@ -100,9 +100,9 @@ class _loginState extends State<login> {
                         onPressed: () {
                           setState(() {
                   if (namecontrol.text.length < 3)
-                    nameerror = "enter atleast 3 character";
+                    nameer = "enter atleast 3 character";
                   else
-                    nameerror = null;
+                    nameer = null;
                 });
 
                 print(namecontrol);
