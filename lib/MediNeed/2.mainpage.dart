@@ -17,7 +17,7 @@ class mainpage extends StatefulWidget {
 }
 
 class _mainpageState extends State<mainpage> {
-  var choices = ["help", "chat", "feedback", "Appointments"];
+  var choices = ["Help", "Chat", "Feedback", "Appointments"];
   @override
   Widget build(BuildContext context) {
     return Scaffold(
