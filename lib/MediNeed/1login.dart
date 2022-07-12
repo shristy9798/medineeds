@@ -6,18 +6,18 @@ import 'package:flutter/material.dart';
 
 void main() {
   runApp(MaterialApp(
-    home: log(),
+    home: login(),
   ));
 }
 
-class log extends StatefulWidget {
-  log({Key? key}) : super(key: key);
+class login extends StatefulWidget {
+  login({Key? key}) : super(key: key);
 
   @override
-  State<log> createState() => _logState();
+  State<login> createState() => _loginState();
 }
 
-class _logState extends State<log> {
+class _loginState extends State<login> {
   var st = true;
 
   String? nameerror = null;
