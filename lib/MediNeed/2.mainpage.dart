@@ -1,3 +1,5 @@
+// ignore_for_file: prefer_const_constructors
+
 import 'package:flutter/material.dart';
 
 void main() {
@@ -52,63 +54,67 @@ class _mainpageState extends State<mainpage> {
                 ),
               )),
           Column(children: [
-            Container(
-              padding: EdgeInsets.all(20), //insert space within
-              margin: EdgeInsets.only(bottom: 10),
-              child: Center(
-                child: InkWell(
-                  splashColor: Colors.black26,
-                  onTap: () {},
-                  child: Column(
-                    mainAxisSize: MainAxisSize.min,
-                    children: [
-                      Ink.image(
-                        image: NetworkImage(
-                            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4_GVbDrGOeTKVD-KImhZMz_O6BPyj1YmiBg&usqp=CAU"),
-                        height: 200,
-                        width: 200,
-                        fit: BoxFit.cover,
+            Row(
+              children: [
+                Container(
+                  padding: EdgeInsets.all(20), //insert space within
+                  margin: EdgeInsets.only(bottom: 10),
+                  child: Center(
+                    child: InkWell(
+                      splashColor: Colors.black26,
+                      onTap: () {},
+                      child: Column(
+                        mainAxisSize: MainAxisSize.min,
+                        children: [
+                          Ink.image(
+                            image: NetworkImage(
+                                "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4_GVbDrGOeTKVD-KImhZMz_O6BPyj1YmiBg&usqp=CAU"),
+                            height: 200,
+                            width: 200,
+                            fit: BoxFit.cover,
+                          ),
+                          SizedBox(
+                            height: 5,
+                          ),
+                          Text(
+                            "Fever",
+                            style: TextStyle(fontSize: 30, color: Colors.blue),
+                          ),
+                        ],
                       ),
-                      SizedBox(
-                        height: 5,
-                      ),
-                      Text(
-                        "Fever",
-                        style: TextStyle(fontSize: 30, color: Colors.blue),
-                      ),
-                    ],
+                    ),
                   ),
                 ),
-              ),
-            ),
-            Container(
-              padding: EdgeInsets.all(10), //insert space within
-              margin: EdgeInsets.only(bottom: 5),
-              child: Center(
-                child: InkWell(
-                  splashColor: Colors.black26,
-                  onTap: () {},
-                  child: Column(
-                    mainAxisSize: MainAxisSize.min,
-                    children: [
-                      Ink.image(
-                        image: NetworkImage(
-                            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTb8cqPLU8Nf8kBzhbRfF7oEdLsmn3G51ABPw&usqp=CAU"),
-                        height: 200,
-                        width: 200,
-                        fit: BoxFit.cover,
+                Container(
+                  padding: EdgeInsets.all(10), //insert space within
+                  margin: EdgeInsets.only(bottom: 5),
+                  child: Center(
+                    child: InkWell(
+                      splashColor: Colors.black26,
+                      onTap: () {},
+                      child: Column(
+                        mainAxisSize: MainAxisSize.min,
+                        children: [
+                          Ink.image(
+                            image: NetworkImage(
+                                "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTb8cqPLU8Nf8kBzhbRfF7oEdLsmn3G51ABPw&usqp=CAU"),
+                            height: 200,
+                            width: 200,
+                            fit: BoxFit.cover,
+                          ),
+                          SizedBox(
+                            height: 5,
+                          ),
+                          Text(
+                            "Dizziness",
+                            style: TextStyle(fontSize: 30, color: Colors.blue),
+                          ),
+                        ],
                       ),
-                      SizedBox(
-                        height: 5,
-                      ),
-                      Text(
-                        "Dizziness",
-                        style: TextStyle(fontSize: 30, color: Colors.blue),
-                      ),
-                    ],
+                    ),
                   ),
                 ),
-              ),
+              ],
             ),
             Container(
               padding: EdgeInsets.all(10), //insert space within
