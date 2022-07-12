@@ -90,7 +90,7 @@ class _logState extends State<log> {
                 decoration: InputDecoration(
                   errorText: passerror,
                   labelText: "Password",
-                  hintText: "enter your password",
+                  hintText: "Enter your password",
                   labelStyle: TextStyle(fontSize: 28, color: Colors.blue),
                   border: OutlineInputBorder(),
                   suffixIcon: IconButton(
