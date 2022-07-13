@@ -40,9 +40,12 @@ class _mainpageState extends State<mainpage> {
         ),
         body: Center(
             child: ListView(children: [
-          Text(
-            "General Physician",
-            style: TextStyle(color: Colors.black38, fontSize: 35),
+          Padding(
+            padding: const EdgeInsets.fromLTRB(18, 10, 0, 0),
+            child: Text(
+              "General Physician",
+              style: TextStyle(color: Colors.black, fontSize: 28),
+            ),
           ),
           Column(children: [
             Center(
