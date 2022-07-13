@@ -24,8 +24,8 @@ class _feverState extends State<fever> {
              /* Image(
                 image: AssetImage("images/appbar.png"),
                 fit: BoxFit.cover,
-                height: 60,
-                width: 60,
+                height: 30,
+                width: 30,
               ),*/
               Container(
                   padding: const EdgeInsets.all(8.0),
@@ -247,16 +247,16 @@ class _dizinessState extends State<diziness> {
           title: Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              /*Image(
-                image: AssetImage("images\appbar.png"),
+              Image(
+                image: AssetImage("images/appbar.png"),
                 fit: BoxFit.cover,
                 height: 60,
                 width: 60,
-              ),*/
+              ),
               Container(
                   padding: const EdgeInsets.all(8.0),
                   child: Text(
-                    ' you will be ok soon!!',
+                    ' you will be fine soon!!',
                     style: TextStyle(fontSize: 35),
                   )),
             ],
@@ -290,7 +290,7 @@ class _dizinessState extends State<diziness> {
                     child: Row(
                       children: [
                         Image(
-                          image: AssetImage("images\d2.png"),
+                          image: AssetImage("images/d2.png"),
                           height: 250,
                           width: 200,
                           fit: BoxFit.cover,
