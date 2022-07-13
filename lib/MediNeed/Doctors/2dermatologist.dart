@@ -231,7 +231,7 @@ class _acneState extends State<acne> {
           ),
         ));
   }
-}/*
+}
 class hair extends StatefulWidget {
   const hair({Key? key}) : super(key: key);
 
@@ -908,7 +908,7 @@ class _vitiligoState extends State<vitiligo> {
           ),
         ));
   }
-}*/
+}
 
     
  

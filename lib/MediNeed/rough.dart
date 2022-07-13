@@ -4,7 +4,7 @@ import 'dart:ui';
 
 import 'package:flutter/material.dart';
 
-void main() {
+/*void main() {
   runApp(MaterialApp(
     home: login(),
   ));
@@ -114,3 +114,4 @@ class _loginState extends State<login> {
             ])));
   }
 }
+*/

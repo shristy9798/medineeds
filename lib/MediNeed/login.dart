@@ -212,7 +212,7 @@ class _loginState extends State<login> {
                       minimumSize: const Size.fromHeight(50),
                     ),
                     onPressed: () {
-                      print("hello");
+                      
                       setState(() {
                         if (name.text.isEmpty) {
                           nameerror = "Enter your name";

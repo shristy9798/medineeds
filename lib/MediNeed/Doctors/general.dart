@@ -7,7 +7,7 @@ void main() {
   runApp(MaterialApp(home: minor()));
 }
 
-/*
+
 class fever extends StatefulWidget {
   const fever({Key? key}) : super(key: key);
 
@@ -685,7 +685,7 @@ class _coughState extends State<cough> {
           ),
         ));
   }
-}*/
+}
 class minor extends StatefulWidget {
   const minor({Key? key}) : super(key: key);
 
