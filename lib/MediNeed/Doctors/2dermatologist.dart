@@ -1,21 +1,19 @@
-// ignore_for_file: prefer_const_constructors, unnecessary_new, prefer_const_literals_to_create_immutables
-
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 
 void main() {
-  runApp(MaterialApp(home: minor()));
+  runApp(MaterialApp(home: acne()));
 }
 
-/*
-class fever extends StatefulWidget {
-  const fever({Key? key}) : super(key: key);
+
+class acne extends StatefulWidget {
+  const acne({Key? key}) : super(key: key);
 
   @override
-  State<fever> createState() => _feverState();
+  State<acne> createState() => _acneState();
 }
 
-class _feverState extends State<fever> {
+class _acneState extends State<acne> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -23,12 +21,12 @@ class _feverState extends State<fever> {
           title: Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-             /* Image(
+              Image(
                 image: AssetImage("images/appbar.png"),
                 fit: BoxFit.cover,
                 height: 30,
                 width: 30,
-              ),*/
+              ),
               Container(
                   padding: const EdgeInsets.all(8.0),
                   child: Text(
@@ -66,7 +64,7 @@ class _feverState extends State<fever> {
                     child: Row(
                       children: [
                         Image(
-                          image: AssetImage("images/d1.jpg"),
+                          image: AssetImage("images/4drma.jpg"),
                           height: 250,
                           width: 200,
                           fit: BoxFit.cover,
@@ -77,19 +75,19 @@ class _feverState extends State<fever> {
 
                           child: Column(children: [
                             Text(
-                              "Dr.Anand Sachdeva",
+                              "Dr.Himanshu Raj",
                               style: TextStyle(
                                 fontSize: 60,
                                 fontFamily: "Oswald",
                               ),
                             ),
-                            Text("General Physician.",
+                            Text("Dermatologist",
                                 style: TextStyle(
                                     fontSize: 25,
                                     fontFamily: "Ibarra Real Nova",
                                     color: Color.fromARGB(95, 26, 25, 25),
                                     decoration: TextDecoration.underline)),
-                            Text("10 years experience ",
+                            Text("8 years experience ",
                                 style: TextStyle(
                                   fontSize: 25,
                                   fontFamily: "Ibarra Real Nova",
@@ -118,7 +116,7 @@ class _feverState extends State<fever> {
                             Text("Qualification:",
                                 style: TextStyle(
                                     fontSize: 20, fontWeight: FontWeight.w700)),
-                            Text("MBBS",
+                            Text("MBBS,MD-Dermatology,(FAM)",
                                 style: TextStyle(
                                     fontSize: 20, fontWeight: FontWeight.w400)),
                           ]),
@@ -233,15 +231,15 @@ class _feverState extends State<fever> {
           ),
         ));
   }
-}
-class diziness extends StatefulWidget {
-  const diziness({Key? key}) : super(key: key);
+}/*
+class hair extends StatefulWidget {
+  const hair({Key? key}) : super(key: key);
 
   @override
-  State<diziness> createState() => _dizinessState();
+  State<hair> createState() => _hairState();
 }
 
-class _dizinessState extends State<diziness> {
+class _hairState extends State<hair> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -292,7 +290,7 @@ class _dizinessState extends State<diziness> {
                     child: Row(
                       children: [
                         Image(
-                          image: AssetImage("images/d2.png"),
+                          image: AssetImage("images/3drma.jpg"),
                           height: 250,
                           width: 200,
                           fit: BoxFit.cover,
@@ -303,19 +301,19 @@ class _dizinessState extends State<diziness> {
 
                           child: Column(children: [
                             Text(
-                              "Dr.sanzida khan",
+                              "Dr.Saumya Rawat",
                               style: TextStyle(
                                 fontSize: 60,
                                 fontFamily: "Oswald",
                               ),
                             ),
-                            Text("General Physician.",
+                            Text("Dermatologist",
                                 style: TextStyle(
                                     fontSize: 25,
                                     fontFamily: "Ibarra Real Nova",
                                     color: Color.fromARGB(95, 26, 25, 25),
                                     decoration: TextDecoration.underline)),
-                            Text("8 years experience ",
+                            Text("5 years experience ",
                                 style: TextStyle(
                                   fontSize: 25,
                                   fontFamily: "Ibarra Real Nova",
@@ -344,7 +342,7 @@ class _dizinessState extends State<diziness> {
                             Text("Qualification:",
                                 style: TextStyle(
                                     fontSize: 20, fontWeight: FontWeight.w700)),
-                            Text("MBBS",
+                            Text("MBBS,DDVL",
                                 style: TextStyle(
                                     fontSize: 20, fontWeight: FontWeight.w400)),
                           ]),
@@ -460,14 +458,14 @@ class _dizinessState extends State<diziness> {
         ));
   }
 }
-class cough extends StatefulWidget {
-  const cough({Key? key}) : super(key: key);
+class skincare extends StatefulWidget {
+  const skincare({Key? key}) : super(key: key);
 
   @override
-  State<cough> createState() => _coughState();
+  State<skincare> createState() => _skincareState();
 }
 
-class _coughState extends State<cough> {
+class _skincareState extends State<skincare> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -518,7 +516,7 @@ class _coughState extends State<cough> {
                     child: Row(
                       children: [
                         Image(
-                          image: AssetImage("images/d3.jpg"),
+                          image: AssetImage("images/2drma.jpg"),
                           height: 250,
                           width: 200,
                           fit: BoxFit.cover,
@@ -529,13 +527,13 @@ class _coughState extends State<cough> {
 
                           child: Column(children: [
                             Text(
-                              "Dr.Ravikant Kumar",
+                              "Dr.Nisha Kumari",
                               style: TextStyle(
                                 fontSize: 60,
                                 fontFamily: "Oswald",
                               ),
                             ),
-                            Text("General Physician.",
+                            Text("Dermatologist.",
                                 style: TextStyle(
                                     fontSize: 25,
                                     fontFamily: "Ibarra Real Nova",
@@ -570,7 +568,7 @@ class _coughState extends State<cough> {
                             Text("Qualification:",
                                 style: TextStyle(
                                     fontSize: 20, fontWeight: FontWeight.w700)),
-                            Text("MBBS",
+                            Text("MBBS,MD-Dermatology",
                                 style: TextStyle(
                                     fontSize: 20, fontWeight: FontWeight.w400)),
                           ]),
@@ -685,15 +683,15 @@ class _coughState extends State<cough> {
           ),
         ));
   }
-}*/
-class minor extends StatefulWidget {
-  const minor({Key? key}) : super(key: key);
+}
+class vitiligo extends StatefulWidget {
+  const vitiligo({Key? key}) : super(key: key);
 
   @override
-  State<minor> createState() => _minorState();
+  State<vitiligo> createState() => _vitiligoState();
 }
 
-class _minorState extends State<minor> {
+class _vitiligoState extends State<vitiligo> {
   @override
   Widget build(BuildContext context) {return Scaffold(
         appBar: AppBar(
@@ -743,7 +741,7 @@ class _minorState extends State<minor> {
                     child: Row(
                       children: [
                         Image(
-                          image: AssetImage("images/d4.jpg"),
+                          image: AssetImage("images/1drma.jpg"),
                           height: 250,
                           width: 200,
                           fit: BoxFit.cover,
@@ -754,13 +752,13 @@ class _minorState extends State<minor> {
 
                           child: Column(children: [
                             Text(
-                              "Dr.vikash Kumar",
+                              "Dr.vikash vatra",
                               style: TextStyle(
                                 fontSize: 60,
                                 fontFamily: "Oswald",
                               ),
                             ),
-                            Text("General Physician/Orthopedist",
+                            Text("Dermatologist",
                                 style: TextStyle(
                                     fontSize: 25,
                                     fontFamily: "Ibarra Real Nova",
@@ -795,7 +793,7 @@ class _minorState extends State<minor> {
                             Text("Qualification:",
                                 style: TextStyle(
                                     fontSize: 20, fontWeight: FontWeight.w700)),
-                            Text("MBBS",
+                            Text("MBBS,MD Dermatology ",
                                 style: TextStyle(
                                     fontSize: 20, fontWeight: FontWeight.w400)),
                           ]),
@@ -910,7 +908,7 @@ class _minorState extends State<minor> {
           ),
         ));
   }
-}
+}*/
 
     
  
