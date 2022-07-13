@@ -1,23 +1,28 @@
-// ignore_for_file: prefer_const_constructors
+// ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables, avoid_init_to_null,
+//import 'package:firebase_core/firebase_core.dart';
+//import 'package:cloud_firestore/cloud_firestore.dart';
 
 import 'package:flutter/material.dart';
 import 'package:medineeds/MediNeed/2.mainpage.dart';
 
-void main() {
+void main() async {
+ // WidgetsFlutterBinding.ensureInitialized();
+ // await Firebase.initializeApp();
+
   runApp(MaterialApp(
     debugShowCheckedModeBanner: false,
-    home: log(),
+    home: login(),
   ));
 }
 
-class log extends StatefulWidget {
-  log({Key? key}) : super(key: key);
+class login extends StatefulWidget {
+  const login({Key? key}) : super(key: key);
 
   @override
-  State<log> createState() => _logState();
+  State<login> createState() => _loginState();
 }
 
-class _logState extends State<log> {
+class _loginState extends State<login> {
   var st = true;
 
   String? nameerror = null;
@@ -28,133 +33,229 @@ class _logState extends State<log> {
 
   String? passerror = null;
 
-  TextEditingController namecontrol = TextEditingController();
+  TextEditingController name = TextEditingController();
 
-  TextEditingController mailcontrol = TextEditingController();
+  TextEditingController email = TextEditingController();
 
-  TextEditingController phonecontrol = TextEditingController();
+  TextEditingController phone = TextEditingController();
 
-  TextEditingController passcontrol = TextEditingController();
+  TextEditingController pass = TextEditingController();
+
+ // final firebase = FirebaseFirestore.instance;
+
+  // void create() async {
+  //   print(name.text);
+  //   try {
+  //     await firebase
+  //         .collection("User")
+  //         // .doc()
+  //         .doc(phone.text)
+  //         .set({
+  //       "name": name.text,
+  //       "email": email.text,
+  //       "Phone": phone.text,
+  //       "pass": pass.text
+  //     });
+  //   } catch (e) {
+  //     print(e);
+  //   }
+  // }
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-        body: Center(
-            child: SafeArea(
-                child: ListView(
-      children: [
-        Container(
-            padding: EdgeInsets.all(20), //insert space within
-            margin: EdgeInsets.only(bottom: 10),
-            color: Colors.blue,
-            width: 300,
-            height: 200,
-            child: Image(image: AssetImage('images/medi.png'))),
-        Container(
-          margin: EdgeInsets.all(50),
-          child: Column(
+    return SafeArea(
+      child: (Scaffold(
+        body: ListView(children: [
+          Column(
             children: [
-              TextField(
-                controller: namecontrol,
-                decoration: InputDecoration(
-                    errorText: nameerror,
-                    labelText: "Name",
-                    hintText: "enter your name",
-                    labelStyle: TextStyle(fontSize: 28, color: Colors.blue),
-                    border: UnderlineInputBorder()),
+              Padding(
+                padding: const EdgeInsets.fromLTRB(10, 15, 10, 0),
+                child: ClipRRect(
+                  borderRadius: BorderRadius.circular(12),
+                  child: Image.asset("images/medilog.PNG"),
+                ),
               ),
-              SizedBox(height: 20),
-              TextField(
-                  controller: mailcontrol,
+              Padding(
+                padding: const EdgeInsets.fromLTRB(0, 20, 0, 10),
+                child: Text(
+                  "Welcome to MediNeeds",
+                  style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold),
+                ),
+              ),
+            ],
+          ),
+          Padding(
+            padding: const EdgeInsets.fromLTRB(40, 30, 40, 70),
+            child: Column(
+              children: [
+                TextField(
+                  controller: name,
                   decoration: InputDecoration(
+                      errorText: nameerror,
+                      labelText: "Name",
+                      hintText: "Enter your name",
+                      labelStyle: TextStyle(
+                          fontSize: 20,
+                          color: Color.fromARGB(220, 45, 57, 121)),
+                      border: OutlineInputBorder(
+                          borderRadius: BorderRadius.circular(8),
+                          borderSide: BorderSide(
+                            color: Color.fromARGB(220, 45, 57, 121),
+                          )),
+                      focusedBorder: OutlineInputBorder(
+                        borderSide: const BorderSide(
+                          width: 2,
+                          color: Color.fromARGB(220, 45, 57, 121),
+                        ),
+                        borderRadius: BorderRadius.circular(8),
+                      ),
+                      suffixIcon: Icon(
+                        Icons.person,
+                        color: Color.fromARGB(220, 45, 57, 121),
+                      )),
+                ),
+                SizedBox(height: 35),
+                TextField(
+                  controller: email,
+                  decoration: InputDecoration(
+                      hoverColor: Color.fromARGB(220, 45, 57, 121),
+                      focusColor: Color.fromARGB(220, 45, 57, 121),
                       errorText: mailerror,
                       labelText: "Email",
-                      hintText: "enter your email",
-                      labelStyle: TextStyle(fontSize: 28, color: Colors.blue),
-                      border: UnderlineInputBorder())),
-              SizedBox(height: 20),
-              TextField(
-                controller: phonecontrol,
-                maxLength: 10,
-                decoration: InputDecoration(
+                      hintText: "Enter your email",
+                      labelStyle: TextStyle(
+                          fontSize: 20,
+                          color: Color.fromARGB(220, 45, 57, 121)),
+                      border: OutlineInputBorder(
+                          borderRadius: BorderRadius.circular(8),
+                          borderSide: BorderSide(
+                            color: Color.fromARGB(220, 45, 57, 121),
+                          )),
+                      focusedBorder: OutlineInputBorder(
+                        borderSide: const BorderSide(
+                          width: 2,
+                          color: Color.fromARGB(220, 45, 57, 121),
+                        ),
+                        borderRadius: BorderRadius.circular(8),
+                      ),
+                      suffixIcon: Icon(
+                        Icons.alternate_email,
+                        color: Color.fromARGB(220, 45, 57, 121),
+                      )),
+                ),
+                SizedBox(height: 35),
+                TextField(
+                  controller: phone,
+                  maxLength: 10,
+                  decoration: InputDecoration(
                     errorText: phoneerror,
                     labelText: "Mobile no.",
-                    hintText: "enter your Mobile no. ",
-                    labelStyle: TextStyle(fontSize: 28, color: Colors.blue),
-                    border: UnderlineInputBorder()),
-                keyboardType: TextInputType.number,
-              ),
-              SizedBox(height: 20),
-              TextField(
-                controller: passcontrol,
-                decoration: InputDecoration(
-                  errorText: passerror,
-                  labelText: "Password",
-                  hintText: "Enter your password",
-                  labelStyle: TextStyle(fontSize: 28, color: Colors.blue),
-                  border: OutlineInputBorder(),
-                  suffixIcon: IconButton(
-                      onPressed: () {
-                        setState(() {
-                          st = !st;
-                        });
-                      },
-                      icon: Icon(st
-                          ? Icons.remove_red_eye
-                          : Icons.accessibility_new_rounded)),
+                    hintText: "Enter your Mobile no. ",
+                    labelStyle: TextStyle(
+                        fontSize: 20, color: Color.fromARGB(220, 45, 57, 121)),
+                    border: OutlineInputBorder(
+                        borderRadius: BorderRadius.circular(8),
+                        borderSide: BorderSide(
+                          color: Color.fromARGB(220, 45, 57, 121),
+                        )),
+                    focusedBorder: OutlineInputBorder(
+                      borderSide: const BorderSide(
+                        width: 2,
+                        color: Color.fromARGB(220, 45, 57, 121),
+                      ),
+                      borderRadius: BorderRadius.circular(8),
+                    ),
+                    suffixIcon: Icon(
+                      Icons.phone,
+                      color: Color.fromARGB(220, 45, 57, 121),
+                    ),
+                  ),
+                  keyboardType: TextInputType.number,
                 ),
-                obscureText: st,
-              ),
-              SizedBox(height: 40),
-              SizedBox(
-                width: 200,
-                height: 50,
-                child: ElevatedButton(
+                SizedBox(height: 28),
+                TextField(
+                  controller: pass,
+                  decoration: InputDecoration(
+                    errorText: passerror,
+                    labelText: "Password",
+                    hintText: "Enter your password",
+                    labelStyle: TextStyle(
+                        fontSize: 20, color: Color.fromARGB(220, 45, 57, 121)),
+                    border: OutlineInputBorder(
+                        borderRadius: BorderRadius.circular(8),
+                        borderSide: BorderSide(
+                          color: Color.fromARGB(220, 45, 57, 121),
+                        )),
+                    focusedBorder: OutlineInputBorder(
+                      borderSide: const BorderSide(
+                        width: 2,
+                        color: Color.fromARGB(220, 45, 57, 121),
+                      ),
+                      borderRadius: BorderRadius.circular(8),
+                    ),
+                    suffixIcon: IconButton(
+                        color: Color.fromARGB(220, 45, 57, 121),
+                        onPressed: () {
+                          setState(() {
+                            st = !st;
+                          });
+                        },
+                        icon:
+                            Icon(st ? Icons.visibility : Icons.visibility_off)),
+                  ),
+                  obscureText: st,
+                ),
+                SizedBox(height: 40),
+                ElevatedButton(
+                    style: ElevatedButton.styleFrom(
+                      primary: Color.fromARGB(220, 45, 57, 121),
+                      minimumSize: const Size.fromHeight(50),
+                    ),
                     onPressed: () {
+                      print("hello");
                       setState(() {
-                        if (namecontrol.text.isEmpty) {
-                          nameerror = "enter your name";
+                        if (name.text.isEmpty) {
+                          nameerror = "Enter your name";
                         } else {
                           nameerror = null;
                         }
-                        if (mailcontrol.text.isEmpty) {
-                          mailerror = "enter valid mail id";
+                        if (email.text.isEmpty) {
+                          mailerror = "Enter valid mail id";
                         } else {
                           mailerror = null;
                         }
-                        if (phonecontrol.text.isEmpty) {
-                          phoneerror = "enter valid mobile no.";
-                        } else {
-                          phoneerror = null;
-                        }
-                        if (passcontrol.text.isEmpty) {
-                          passerror = "enter password";
-                        } else {
-                          passerror = null;
-                        }
-                        if (phonecontrol.text.length != 10) {
+                        if (phone.text.isEmpty) {
+                          phoneerror = "Enter valid mobile no.";
+                        } else if (phone.text.length != 10 &&
+                            phone.text.isNotEmpty) {
                           phoneerror = "Number must consist 10 digits";
                         } else {
                           phoneerror = null;
                         }
-                        
+                        if (pass.text.isEmpty) {
+                          passerror = "Enter password";
+                        } else {
+                          passerror = null;
+                        }
                       });
-                      if (namecontrol.text.isNotEmpty &&
-                          mailcontrol.text.isNotEmpty &&
-                          phonecontrol.text.length != 10 &&
-                          passcontrol.text.isNotEmpty) {
+
+                      if (name.text.isNotEmpty &&
+                          email.text.isNotEmpty &&
+                          pass.text.isNotEmpty &&
+                          phone.text.length == 10) {
+                        //create();
                         Navigator.push(context,
                             MaterialPageRoute(builder: (context) {
                           return (mainpage());
                         }));
                       }
                     },
-                    child: Text("submit")),
-              )
-            ],
-          ),
-        )
-      ],
-    ))));
+                    child: Text("Submit"))
+              ],
+            ),
+          )
+        ]),
+      )),
+    );
   }
 }
