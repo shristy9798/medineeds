@@ -63,7 +63,7 @@ class _feverState extends State<fever> {
                         border: Border.all(),
                         borderRadius: BorderRadius.circular(20)),
                     child: Row(
-                      mainAxisAlignment: MainAxisAlignment.start,
+                      mainAxisAlignment: MainAxisAlignment.spaceAround,
                       children: [
                         ClipRRect(
                           borderRadius: BorderRadius.circular(12.0),
@@ -74,10 +74,6 @@ class _feverState extends State<fever> {
                           ),
                         ),
                         Container(
-                          padding: EdgeInsets.only(
-                            left: 15,
-                          ), //insert space within
-
                           child: Column(
                               mainAxisAlignment: MainAxisAlignment.center,
                               children: [
@@ -88,7 +84,7 @@ class _feverState extends State<fever> {
                                     fontFamily: "Oswald",
                                   ),
                                 ),
-                                Text("General Physician.",
+                                Text("General Physician",
                                     style: TextStyle(
                                         fontSize: 16,
                                         fontFamily: "Ibarra Real Nova",
@@ -161,7 +157,9 @@ class _feverState extends State<fever> {
                     TextSpan(
                         text: " Speaks:English",
                         style: TextStyle(
-                            fontSize: 20, fontWeight: FontWeight.w400))
+                            color: Colors.black,
+                            fontSize: 20,
+                            fontWeight: FontWeight.w400))
                   ])),
                   RichText(
                       text: TextSpan(children: [
@@ -174,7 +172,9 @@ class _feverState extends State<fever> {
                     TextSpan(
                         text: " 6442 consultations",
                         style: TextStyle(
-                            fontSize: 20, fontWeight: FontWeight.w400))
+                            color: Colors.black,
+                            fontSize: 20,
+                            fontWeight: FontWeight.w400))
                   ])),
                   RichText(
                       text: TextSpan(children: [
