@@ -50,7 +50,7 @@ class _mainpageState extends State<mainpage> {
               shape: RoundedRectangleBorder(
                 borderRadius: BorderRadius.circular(15.0),
               ),
-              color: Colors.blueAccent,
+              color: Color.fromARGB(255, 119, 180, 230),
               child: Center(
                 child: Padding(
                   padding: const EdgeInsets.all(8.0),
@@ -138,7 +138,7 @@ class _mainpageState extends State<mainpage> {
                   //           Text(
                   //             "Fever",
                   //             style:
-                  //                 TextStyle(fontSize: 20, color: Colors.blue),
+                  //                 TextStyle(fontSize: 20, color:Color.fromARGB(255, 150, 193, 228),),
                   //           ),
                   //         ],
                   //       ),
@@ -215,7 +215,7 @@ class _mainpageState extends State<mainpage> {
                   //           Text(
                   //             "Dizziness",
                   //             style:
-                  //                 TextStyle(fontSize: 20, color: Colors.blue),
+                  //                 TextStyle(fontSize: 20, color:Color.fromARGB(255, 150, 193, 228),),
                   //           ),
                   //         ],
                   //       ),
@@ -365,7 +365,7 @@ class _mainpageState extends State<mainpage> {
             //                 Text(
             //                   "Cough",
             //                   style:
-            //                       TextStyle(fontSize: 20, color: Colors.blue),
+            //                       TextStyle(fontSize: 20, color:Color.fromARGB(255, 150, 193, 228),),
             //                 ),
             //               ],
             //             ),
@@ -394,7 +394,7 @@ class _mainpageState extends State<mainpage> {
             //                 Text(
             //                   "Minor injuries",
             //                   style:
-            //                       TextStyle(fontSize: 20, color: Colors.blue),
+            //                       TextStyle(fontSize: 20, color:Color.fromARGB(255, 150, 193, 228),),
             //                 ),
             //               ],
             //             ),
@@ -410,7 +410,7 @@ class _mainpageState extends State<mainpage> {
                 shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(15.0),
                 ),
-                color: Colors.orangeAccent,
+                color: Color.fromARGB(255, 150, 193, 228),
                 child: Center(
                   child: Padding(
                     padding: const EdgeInsets.all(8.0),
@@ -680,7 +680,7 @@ class _mainpageState extends State<mainpage> {
               //                   Text(
               //                     "Acne Scars",
               //                     style:
-              //                         TextStyle(fontSize: 20, color: Colors.blue),
+              //                         TextStyle(fontSize: 20, color:Color.fromARGB(255, 150, 193, 228),),
               //                   ),
               //                 ],
               //               ),
@@ -709,7 +709,7 @@ class _mainpageState extends State<mainpage> {
               //                   Text(
               //                     "Hair loss",
               //                     style:
-              //                         TextStyle(fontSize: 20, color: Colors.blue),
+              //                         TextStyle(fontSize: 20, color:Color.fromARGB(255, 150, 193, 228),),
               //                   ),
               //                 ],
               //               ),
@@ -745,7 +745,7 @@ class _mainpageState extends State<mainpage> {
               //                   Text(
               //                     "Skincare",
               //                     style:
-              //                         TextStyle(fontSize: 20, color: Colors.blue),
+              //                         TextStyle(fontSize: 20, color:Color.fromARGB(255, 150, 193, 228),),
               //                   ),
               //                 ],
               //               ),
@@ -774,7 +774,7 @@ class _mainpageState extends State<mainpage> {
               //                   Text(
               //                     "Vitiligo",
               //                     style:
-              //                         TextStyle(fontSize: 20, color: Colors.blue),
+              //                         TextStyle(fontSize: 20, color:Color.fromARGB(255, 150, 193, 228),),
               //                   ),
               //                 ],
               //               ),
@@ -802,7 +802,7 @@ class _mainpageState extends State<mainpage> {
                   shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(15.0),
                   ),
-                  color: Colors.orangeAccent,
+                  color: Color.fromARGB(255, 150, 193, 228),
                   child: Center(
                     child: Padding(
                       padding: const EdgeInsets.all(8.0),
@@ -1054,7 +1054,7 @@ class _mainpageState extends State<mainpage> {
                 //                   Text(
                 //                     "Knee Pain",
                 //                     style: TextStyle(
-                //                         fontSize: 20, color: Colors.blue),
+                //                         fontSize: 20, color:Color.fromARGB(255, 150, 193, 228),),
                 //                   ),
                 //                 ],
                 //               ),
@@ -1083,7 +1083,7 @@ class _mainpageState extends State<mainpage> {
                 //                   Text(
                 //                     "Shoulder pain",
                 //                     style: TextStyle(
-                //                         fontSize: 20, color: Colors.blue),
+                //                         fontSize: 20, color:Color.fromARGB(255, 150, 193, 228),),
                 //                   ),
                 //                 ],
                 //               ),
@@ -1119,7 +1119,7 @@ class _mainpageState extends State<mainpage> {
                 //                   Text(
                 //                     "Leg Pain",
                 //                     style: TextStyle(
-                //                         fontSize: 20, color: Colors.blue),
+                //                         fontSize: 20, color:Color.fromARGB(255, 150, 193, 228),),
                 //                   ),
                 //                 ],
                 //               ),
@@ -1148,12 +1148,12 @@ class _mainpageState extends State<mainpage> {
                 //                   Text(
                 //                     "Carpal Tunnel",
                 //                     style: TextStyle(
-                //                         fontSize: 20, color: Colors.blue),
+                //                         fontSize: 20, color:Color.fromARGB(255, 150, 193, 228),),
                 //                   ),
                 //                   Text(
                 //                     " Syndrome ",
                 //                     style: TextStyle(
-                //                         fontSize: 20, color: Colors.blue),
+                //                         fontSize: 20, color:Color.fromARGB(255, 150, 193, 228),),
                 //                     textAlign: TextAlign.center,
                 //                   ),
                 //                 ],
@@ -1170,7 +1170,7 @@ class _mainpageState extends State<mainpage> {
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(15.0),
                     ),
-                    color: Colors.orangeAccent,
+                    color: Color.fromARGB(255, 150, 193, 228),
                     child: Center(
                       child: Padding(
                         padding: const EdgeInsets.all(8.0),
@@ -1437,7 +1437,7 @@ class _mainpageState extends State<mainpage> {
                     //                     Text(
                     //                       "Sore Throat",
                     //                       style: TextStyle(
-                    //                           fontSize: 20, color: Colors.blue),
+                    //                           fontSize: 20, color:Color.fromARGB(255, 150, 193, 228),),
                     //                     ),
                     //                   ],
                     //                 ),
@@ -1466,7 +1466,7 @@ class _mainpageState extends State<mainpage> {
                     //                     Text(
                     //                       "Mouth Sores",
                     //                       style: TextStyle(
-                    //                           fontSize: 20, color: Colors.blue),
+                    //                           fontSize: 20, color:Color.fromARGB(255, 150, 193, 228),),
                     //                     ),
                     //                   ],
                     //                 ),
@@ -1504,7 +1504,7 @@ class _mainpageState extends State<mainpage> {
                     //                       textAlign: TextAlign.center,
                     //                       style: TextStyle(
                     //                         fontSize: 20,
-                    //                         color: Colors.blue,
+                    //                         color:Color.fromARGB(255, 150, 193, 228),,
                     //                       ),
                     //                     ),
                     //                   ],
@@ -1534,7 +1534,7 @@ class _mainpageState extends State<mainpage> {
                     //                     Text(
                     //                       "Hearing Loss",
                     //                       style: TextStyle(
-                    //                           fontSize: 20, color: Colors.blue),
+                    //                           fontSize: 20, color:Color.fromARGB(255, 150, 193, 228),),
                     //                     ),
                     //                   ],
                     //                 ),
@@ -1563,7 +1563,7 @@ class _mainpageState extends State<mainpage> {
                         shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(15.0),
                         ),
-                        color: Colors.orangeAccent,
+                        color: Color.fromARGB(255, 150, 193, 228),
                         child: Center(
                           child: Padding(
                             padding: const EdgeInsets.all(8.0),
@@ -1743,7 +1743,7 @@ class _mainpageState extends State<mainpage> {
                             //           Text(
                             //             "Pediatrics",
                             //             style: TextStyle(
-                            //                 fontSize: 18, color: Colors.blue),
+                            //                 fontSize: 18, color:Color.fromARGB(255, 150, 193, 228),),
                             //           ),
                             //         ],
                             //       ),
@@ -1772,7 +1772,7 @@ class _mainpageState extends State<mainpage> {
                             //           Text(
                             //             "Gynaecology",
                             //             style: TextStyle(
-                            //                 fontSize: 18, color: Colors.blue),
+                            //                 fontSize: 18, color:Color.fromARGB(255, 150, 193, 228),),
                             //           ),
                             //         ],
                             //       ),
@@ -1802,7 +1802,7 @@ class _mainpageState extends State<mainpage> {
                             //           Text(
                             //             "Psychiatry",
                             //             style: TextStyle(
-                            //                 fontSize: 18, color: Colors.blue),
+                            //                 fontSize: 18, color:Color.fromARGB(255, 150, 193, 228),),
                             //           ),
                             //         ],
                             //       ),
@@ -1981,7 +1981,7 @@ class _mainpageState extends State<mainpage> {
                             //           Text(
                             //             "Dental",
                             //             style: TextStyle(
-                            //                 fontSize: 18, color: Colors.blue),
+                            //                 fontSize: 18, color:Color.fromARGB(255, 150, 193, 228),),
                             //           ),
                             //         ],
                             //       ),
@@ -2011,7 +2011,7 @@ class _mainpageState extends State<mainpage> {
                             //           Text(
                             //             "Pulmonology",
                             //             style: TextStyle(
-                            //                 fontSize: 18, color: Colors.blue),
+                            //                 fontSize: 18, color:Color.fromARGB(255, 150, 193, 228),),
                             //           ),
                             //         ],
                             //       ),
@@ -2040,12 +2040,12 @@ class _mainpageState extends State<mainpage> {
                             //           Text(
                             //             "Diet &",
                             //             style: TextStyle(
-                            //                 fontSize: 18, color: Colors.blue),
+                            //                 fontSize: 18, color:Color.fromARGB(255, 150, 193, 228),),
                             //           ),
                             //           Text(
                             //             "Nutrition",
                             //             style: TextStyle(
-                            //                 fontSize: 18, color: Colors.blue),
+                            //                 fontSize: 18, color:Color.fromARGB(255, 150, 193, 228),),
                             //             textAlign: TextAlign.center,
                             //           ),
                             //         ],
