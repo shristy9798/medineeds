@@ -33,7 +33,7 @@ class _mainpageState extends State<mainpage> {
               fontSize: 18,
             ),
           ),
-          backgroundColor: Colors.orangeAccent,
+          backgroundColor: Colors.blueAccent,
           actions: [
             PopupMenuButton(itemBuilder: (BuildContext context) {
               return choices.map((String myChoice) {
@@ -50,7 +50,7 @@ class _mainpageState extends State<mainpage> {
               shape: RoundedRectangleBorder(
                 borderRadius: BorderRadius.circular(15.0),
               ),
-              color: Colors.blueAccent,
+              color: Colors.orangeAccent,
               child: Center(
                 child: Padding(
                   padding: const EdgeInsets.all(8.0),
