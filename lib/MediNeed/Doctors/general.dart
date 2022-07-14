@@ -1,12 +1,10 @@
 // ignore_for_file: prefer_const_constructors, unnecessary_new, prefer_const_literals_to_create_immutables
 
 import 'package:flutter/material.dart';
-import 'package:flutter/rendering.dart';
 
 void main() {
-  runApp(MaterialApp(home: minor()));
+  runApp(MaterialApp(home: fever()));
 }
-
 
 class fever extends StatefulWidget {
   const fever({Key? key}) : super(key: key);
@@ -23,7 +21,7 @@ class _feverState extends State<fever> {
           title: Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-             /* Image(
+              /* Image(
                 image: AssetImage("images/appbar.png"),
                 fit: BoxFit.cover,
                 height: 30,
@@ -32,8 +30,8 @@ class _feverState extends State<fever> {
               Container(
                   padding: const EdgeInsets.all(8.0),
                   child: Text(
-                    ' you will be ok soon!!',
-                    style: TextStyle(fontSize: 35),
+                    'You will be ok soon!!',
+                    style: TextStyle(fontSize: 30),
                   )),
             ],
           ),
@@ -49,10 +47,10 @@ class _feverState extends State<fever> {
               children: [
                 Text("Best Doctor In Suggestion.",
                     style: TextStyle(
-                      fontSize: 40,
+                      fontSize: 26,
                       color: Colors.black87,
                       fontFamily: "Roboto",
-                      fontWeight: FontWeight.w800,
+                      fontWeight: FontWeight.bold,
                     )),
                 SizedBox(
                   height: 10,
@@ -67,8 +65,8 @@ class _feverState extends State<fever> {
                       children: [
                         Image(
                           image: AssetImage("images/d1.jpg"),
-                          height: 250,
-                          width: 200,
+                          height: 180,
+                          width: 130,
                           fit: BoxFit.cover,
                         ),
                         Container(
@@ -79,19 +77,19 @@ class _feverState extends State<fever> {
                             Text(
                               "Dr.Anand Sachdeva",
                               style: TextStyle(
-                                fontSize: 60,
+                                fontSize: 20,
                                 fontFamily: "Oswald",
                               ),
                             ),
                             Text("General Physician.",
                                 style: TextStyle(
-                                    fontSize: 25,
+                                    fontSize: 18,
                                     fontFamily: "Ibarra Real Nova",
                                     color: Color.fromARGB(95, 26, 25, 25),
                                     decoration: TextDecoration.underline)),
                             Text("10 years experience ",
                                 style: TextStyle(
-                                  fontSize: 25,
+                                  fontSize: 18,
                                   fontFamily: "Ibarra Real Nova",
                                   color: Colors.black,
                                   fontWeight: FontWeight.w600,
@@ -185,47 +183,26 @@ class _feverState extends State<fever> {
                           TextStyle(fontSize: 20, fontWeight: FontWeight.w800)),
                 ),
                 Container(
-                    padding: EdgeInsets.all(10),
                     margin: EdgeInsets.only(top: 10),
                     child: Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
-                        new SizedBox(
-                            width: 150,
-                            height: 70,
-                            child: ElevatedButton(
-                                onPressed: () {},
-                                child: Text("4:30 PM",
-                                    style: TextStyle(
-                                        fontSize: 30,
-                                        fontWeight: FontWeight.w400)))),
-                        new SizedBox(
-                            width: 150,
-                            height: 70,
-                            child: ElevatedButton(
-                                onPressed: () {},
-                                child: Text("6:00 PM",
-                                    style: TextStyle(
-                                        fontSize: 30,
-                                        fontWeight: FontWeight.w400)))),
-                        new SizedBox(
-                            width: 150,
-                            height: 70,
-                            child: ElevatedButton(
-                                onPressed: () {},
-                                child: Text("7:30 PM",
-                                    style: TextStyle(
-                                        fontSize: 30,
-                                        fontWeight: FontWeight.w400)))),
-                        new SizedBox(
-                            width: 150,
-                            height: 70,
-                            child: ElevatedButton(
-                                onPressed: () {},
-                                child: Text("9:00 PM",
-                                    style: TextStyle(
-                                        fontSize: 30,
-                                        fontWeight: FontWeight.w400))))
+                        ElevatedButton(
+                            onPressed: () {},
+                            child: Text("4:30 PM",
+                                style: TextStyle(fontWeight: FontWeight.w400))),
+                        ElevatedButton(
+                            onPressed: () {},
+                            child: Text("6:00 PM",
+                                style: TextStyle(fontWeight: FontWeight.w400))),
+                        ElevatedButton(
+                            onPressed: () {},
+                            child: Text("7:30 PM",
+                                style: TextStyle(fontWeight: FontWeight.w400))),
+                        ElevatedButton(
+                            onPressed: () {},
+                            child: Text("9:00 PM",
+                                style: TextStyle(fontWeight: FontWeight.w400)))
                       ],
                     )),
               ],
@@ -234,6 +211,7 @@ class _feverState extends State<fever> {
         ));
   }
 }
+
 class diziness extends StatefulWidget {
   const diziness({Key? key}) : super(key: key);
 
@@ -460,6 +438,7 @@ class _dizinessState extends State<diziness> {
         ));
   }
 }
+
 class cough extends StatefulWidget {
   const cough({Key? key}) : super(key: key);
 
@@ -686,6 +665,7 @@ class _coughState extends State<cough> {
         ));
   }
 }
+
 class minor extends StatefulWidget {
   const minor({Key? key}) : super(key: key);
 
@@ -695,7 +675,8 @@ class minor extends StatefulWidget {
 
 class _minorState extends State<minor> {
   @override
-  Widget build(BuildContext context) {return Scaffold(
+  Widget build(BuildContext context) {
+    return Scaffold(
         appBar: AppBar(
           title: Row(
             mainAxisAlignment: MainAxisAlignment.center,
@@ -911,6 +892,3 @@ class _minorState extends State<minor> {
         ));
   }
 }
-
-    
- 
