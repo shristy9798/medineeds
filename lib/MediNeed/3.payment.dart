@@ -64,7 +64,10 @@ class _payState extends State<pay> {
                 text: TextSpan(children: [
               TextSpan(
                   text: "  To pay:",
-                  style: TextStyle(fontWeight: FontWeight.w500, fontSize: 25)),
+                  style: TextStyle(
+                      fontWeight: FontWeight.w500,
+                      fontSize: 25,
+                      color: Colors.black)),
               WidgetSpan(
                   child: Icon(
                 Icons.currency_rupee,
@@ -73,7 +76,10 @@ class _payState extends State<pay> {
               )),
               TextSpan(
                   text: "499.00",
-                  style: TextStyle(fontSize: 30, fontWeight: FontWeight.w800)),
+                  style: TextStyle(
+                      fontSize: 30,
+                      fontWeight: FontWeight.w800,
+                      color: Colors.black)),
             ])),
           ),
           Text("Pay Here",
@@ -103,7 +109,9 @@ class _payState extends State<pay> {
                     TextSpan(
                         text: "Debit/Credit Card",
                         style: TextStyle(
-                            fontSize: 30, fontWeight: FontWeight.w500)),
+                            fontSize: 30,
+                            fontWeight: FontWeight.w500,
+                            color: Colors.black)),
                   ]),
                 ),
                 TextField(
