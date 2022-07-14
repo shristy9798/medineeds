@@ -6,8 +6,8 @@ import 'package:flutter/material.dart';
 import 'package:medineeds/MediNeed/2.mainpage.dart';
 
 void main() async {
- // WidgetsFlutterBinding.ensureInitialized();
- // await Firebase.initializeApp();
+  // WidgetsFlutterBinding.ensureInitialized();
+  // await Firebase.initializeApp();
 
   runApp(MaterialApp(
     debugShowCheckedModeBanner: false,
@@ -41,7 +41,7 @@ class _loginState extends State<login> {
 
   TextEditingController pass = TextEditingController();
 
- // final firebase = FirebaseFirestore.instance;
+  // final firebase = FirebaseFirestore.instance;
 
   // void create() async {
   //   print(name.text);
@@ -72,7 +72,7 @@ class _loginState extends State<login> {
                 padding: const EdgeInsets.fromLTRB(10, 15, 10, 0),
                 child: ClipRRect(
                   borderRadius: BorderRadius.circular(12),
-                  child: Image.asset("images/medilog.PNG"),
+                  child: Image.asset("images/splash2.png"),
                 ),
               ),
               Padding(
@@ -172,7 +172,7 @@ class _loginState extends State<login> {
                   ),
                   keyboardType: TextInputType.number,
                 ),
-                SizedBox(height: 28),
+                SizedBox(height: 26),
                 TextField(
                   controller: pass,
                   decoration: InputDecoration(
@@ -212,7 +212,6 @@ class _loginState extends State<login> {
                       minimumSize: const Size.fromHeight(50),
                     ),
                     onPressed: () {
-                      
                       setState(() {
                         if (name.text.isEmpty) {
                           nameerror = "Enter your name";
@@ -250,7 +249,7 @@ class _loginState extends State<login> {
                         }));
                       }
                     },
-                    child: Text("Submit"))
+                    child: Text("Submit")),
               ],
             ),
           )

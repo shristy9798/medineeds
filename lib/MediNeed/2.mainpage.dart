@@ -33,7 +33,7 @@ class _mainpageState extends State<mainpage> {
               fontSize: 18,
             ),
           ),
-          backgroundColor: Colors.orangeAccent,
+          backgroundColor: Colors.blueAccent,
           actions: [
             PopupMenuButton(itemBuilder: (BuildContext context) {
               return choices.map((String myChoice) {

@@ -1,3 +1,5 @@
+// ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables
+
 import 'package:flutter/material.dart';
 
 void main() {
@@ -114,25 +116,27 @@ class _payState extends State<pay> {
                             color: Colors.black)),
                   ]),
                 ),
+                SizedBox(
+                  height: 10,
+                ),
                 TextField(
                   controller: card,
+                  maxLength: 16,
                   decoration: InputDecoration(
                       errorText: carderror,
-                      labelText: "card Number",
-                      hintText: "XXXX XXXX XXXX",
+                      labelText: "Card Number",
+                      hintText: "XXXX-XXXX-XXXX-XXXX",
                       labelStyle: TextStyle(
                           fontSize: 20, color: Color.fromARGB(220, 0, 6, 8)),
                       border: UnderlineInputBorder(),
                       prefixIcon: Icon(Icons.wallet)),
-                ),
-                SizedBox(
-                  height: 20,
+                  keyboardType: TextInputType.number,
                 ),
                 TextField(
-                  controller: card,
+                  controller: name,
                   decoration: InputDecoration(
-                      errorText: carderror,
-                      labelText: "card Holder's Name",
+                      errorText: nameerror,
+                      labelText: "Card Holder's Name",
                       hintText: "Name",
                       labelStyle: TextStyle(
                           fontSize: 20, color: Color.fromARGB(220, 0, 6, 8)),
@@ -143,75 +147,84 @@ class _payState extends State<pay> {
                   height: 20,
                 ),
                 TextField(
-                  controller: card,
+                  controller: valid,
                   decoration: InputDecoration(
-                      errorText: carderror,
+                      errorText: validerror,
                       labelText: "Valid Upto",
-                      hintText: "MM/YY",
+                      hintText: "MM-YY",
                       labelStyle: TextStyle(
                           fontSize: 20, color: Color.fromARGB(220, 0, 6, 8)),
                       border: UnderlineInputBorder(),
                       prefixIcon: Icon(Icons.calendar_month_outlined)),
+                  keyboardType: TextInputType.number,
                 ),
                 SizedBox(
                   height: 20,
                 ),
                 TextField(
-                  controller: card,
+                  controller: cvv,
+                  maxLength: 3,
                   decoration: InputDecoration(
-                      errorText: carderror,
+                      errorText: cvverror,
                       labelText: " Enter CVV",
                       hintText: "***",
                       labelStyle: TextStyle(
                           fontSize: 20, color: Color.fromARGB(220, 0, 6, 8)),
                       border: UnderlineInputBorder(),
                       prefixIcon: Icon(Icons.wallet)),
+                  keyboardType: TextInputType.number,
                 ),
                 SizedBox(height: 40),
                 ElevatedButton(
-                    style: ElevatedButton.styleFrom(
-                      primary: Color.fromARGB(220, 45, 57, 121),
-                      minimumSize: const Size.fromHeight(50),
-                    ),
-                    onPressed: () {
-                      /* setState(() {
-                        if (card.text.isEmpty) {
-                          carderror = "Enter your name";
-                        } else {
-                          nameerror = null;
-                        }
-                        if (name.text.isEmpty) {
-                          nameerror = "Enter valid mail id";
-                        } else {
-                          nameerror = null;
-                        }
-                        if (valid.text.isEmpty) {
-                          validerror = "Enter valid mobile no.";
-                        } else if (valid.text.length != 10 &&
-                            valid.text.isNotEmpty) {
-                          validerror = "Number must consist 10 digits";
-                        } else {
-                          validerror = null;
-                        }
-                        if (cvv.text.isEmpty) {
-                          cvverror = "Enter cvvword";
-                        } else {
-                          cvverror = null;
-                        }
-                      });
+                  style: ElevatedButton.styleFrom(
+                    primary: Color.fromARGB(220, 45, 57, 121),
+                    minimumSize: const Size.fromHeight(50),
+                  ),
+                  onPressed: () {
+                    setState(() {
+                      if (card.text.isEmpty) {
+                        carderror = "Enter Card Number";
+                      } else {
+                        nameerror = null;
+                      }
+                      if (name.text.isEmpty) {
+                        nameerror = "Enter Name";
+                      } else {
+                        nameerror = null;
+                      }
+                      if (valid.text.isEmpty) {
+                        validerror = "Enter the expiry date";
+                      } else if (valid.text.length != 5 &&
+                          valid.text.isNotEmpty) {
+                        validerror = "Enter in MM-YY Format";
+                      } else {
+                        validerror = null;
+                      }
+                      if (cvv.text.isEmpty) {
+                        cvverror = "Enter CVV";
+                      } else if (cvv.text.length != 3) {
+                        cvverror = "Invalid CVV";
+                      } else {
+                        cvverror = null;
+                      }
+                    });
 
-                      if (card.text.isNotEmpty &&
-                          name.text.isNotEmpty &&
-                          cvv.text.isNotEmpty &&
-                          valid.text.length == 10) {
-                        //create();
-                        Navigator.push(context,
+                    if (card.text.isNotEmpty &&
+                        name.text.isNotEmpty &&
+                        cvv.text.isNotEmpty &&
+                        cvv.text.length == 3 &&
+                        valid.text.isNotEmpty &&
+                        valid.text.length == 5) {
+                      //create();
+                      /* Navigator.push(context,
                             MaterialPageRoute(builder: (context) {
                           return (mainpage());
                         }));
                       }*/
-                    },
-                    child: Text("Pay"))
+                    }
+                  },
+                  child: Text('Pay'),
+                )
               ],
             ),
           )
