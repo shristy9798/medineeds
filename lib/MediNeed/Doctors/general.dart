@@ -19,19 +19,19 @@ class _feverState extends State<fever> {
     return Scaffold(
         appBar: AppBar(
           title: Row(
-            mainAxisAlignment: MainAxisAlignment.center,
+            mainAxisAlignment: MainAxisAlignment.start,
             children: [
-              /* Image(
+              Image(
                 image: AssetImage("images/appbar.png"),
                 fit: BoxFit.cover,
                 height: 30,
                 width: 30,
-              ),*/
+              ),
               Container(
                   padding: const EdgeInsets.all(8.0),
                   child: Text(
                     'You will be ok soon!!',
-                    style: TextStyle(fontSize: 30),
+                    style: TextStyle(fontSize: 26),
                   )),
             ],
           ),
@@ -41,13 +41,16 @@ class _feverState extends State<fever> {
           padding: const EdgeInsets.all(8.0),
           child: ListView(
             children: [
-              Text("Best Doctor In Suggestion.",
-                  style: TextStyle(
-                    fontSize: 22,
-                    color: Colors.black87,
-                    fontFamily: "Roboto",
-                    fontWeight: FontWeight.bold,
-                  )),
+              Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: Text("Best Doctor In Suggestion.",
+                    style: TextStyle(
+                      fontSize: 22,
+                      color: Colors.black87,
+                      fontFamily: "Roboto",
+                      fontWeight: FontWeight.bold,
+                    )),
+              ),
               SizedBox(
                 height: 10,
               ),
@@ -71,11 +74,12 @@ class _feverState extends State<fever> {
                           ),
                         ),
                         Container(
-                          padding:
-                              EdgeInsets.only(left: 10), //insert space within
+                          padding: EdgeInsets.only(
+                            left: 15,
+                          ), //insert space within
 
                           child: Column(
-                              mainAxisAlignment: MainAxisAlignment.start,
+                              mainAxisAlignment: MainAxisAlignment.center,
                               children: [
                                 Text(
                                   "Dr.Anand Sachdeva",
@@ -90,30 +94,42 @@ class _feverState extends State<fever> {
                                         fontFamily: "Ibarra Real Nova",
                                         color: Color.fromARGB(95, 26, 25, 25),
                                         decoration: TextDecoration.underline)),
-                                Text("10 years experience ",
-                                    style: TextStyle(
-                                      fontSize: 14,
-                                      fontFamily: "Ibarra Real Nova",
-                                      color: Colors.black,
-                                      fontWeight: FontWeight.w600,
-                                    )),
+                                Padding(
+                                  padding: const EdgeInsets.only(top: 2),
+                                  child: Text("10 years experience ",
+                                      style: TextStyle(
+                                        fontSize: 14,
+                                        fontFamily: "Ibarra Real Nova",
+                                        color: Colors.black,
+                                        fontWeight: FontWeight.w600,
+                                      )),
+                                ),
                                 RichText(
                                     text: TextSpan(children: [
                                   WidgetSpan(
                                       child: Icon(
                                     Icons.star,
                                     color: Color.fromARGB(255, 40, 178, 45),
-                                    size: 30,
+                                    size: 25,
                                   )),
                                   TextSpan(
                                       text: "  4.9",
-                                      style: TextStyle(fontSize: 16)),
-                                  TextSpan(
-                                      text: " Rated by\n2000+ patients ",
                                       style: TextStyle(
+                                        fontSize: 16,
+                                        color: Colors.black,
+                                      )),
+                                  TextSpan(
+                                      text: " Rated by 2000+",
+                                      style: TextStyle(
+                                          color: Colors.black,
                                           fontSize: 16,
                                           fontWeight: FontWeight.w400)),
                                 ])),
+                                Text("patients",
+                                    style: TextStyle(
+                                        color: Colors.black,
+                                        fontSize: 16,
+                                        fontWeight: FontWeight.w400)),
                                 Text("Qualification:",
                                     style: TextStyle(
                                         fontSize: 18,
@@ -126,6 +142,9 @@ class _feverState extends State<fever> {
                         ),
                       ],
                     )),
+              ),
+              SizedBox(
+                height: 8,
               ),
               Container(
                 padding: EdgeInsets.only(left: 20), //insert space within
@@ -174,7 +193,9 @@ class _feverState extends State<fever> {
                     TextSpan(
                         text: "449 Consultation fee",
                         style: TextStyle(
-                            fontSize: 20, fontWeight: FontWeight.w400))
+                            fontSize: 20,
+                            fontWeight: FontWeight.w400,
+                            color: Colors.black))
                   ])),
                 ]),
               ),
@@ -187,23 +208,39 @@ class _feverState extends State<fever> {
                         TextStyle(fontSize: 20, fontWeight: FontWeight.w800)),
               ),
               Container(
-                  margin: EdgeInsets.only(top: 10),
+                  margin: EdgeInsets.only(
+                    top: 10,
+                    left: 4,
+                    right: 4,
+                  ),
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       ElevatedButton(
+                          style: ElevatedButton.styleFrom(
+                            primary: Color.fromARGB(255, 40, 91, 178),
+                          ),
                           onPressed: () {},
                           child: Text("4:30 PM",
                               style: TextStyle(fontWeight: FontWeight.w400))),
                       ElevatedButton(
+                          style: ElevatedButton.styleFrom(
+                            primary: Color.fromARGB(255, 40, 91, 178),
+                          ),
                           onPressed: () {},
                           child: Text("6:00 PM",
                               style: TextStyle(fontWeight: FontWeight.w400))),
                       ElevatedButton(
+                          style: ElevatedButton.styleFrom(
+                            primary: Color.fromARGB(255, 40, 91, 178),
+                          ),
                           onPressed: () {},
                           child: Text("7:30 PM",
                               style: TextStyle(fontWeight: FontWeight.w400))),
                       ElevatedButton(
+                          style: ElevatedButton.styleFrom(
+                            primary: Color.fromARGB(255, 40, 91, 178),
+                          ),
                           onPressed: () {},
                           child: Text("9:00 PM",
                               style: TextStyle(fontWeight: FontWeight.w400)))
