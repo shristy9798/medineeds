@@ -3,7 +3,9 @@
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(MaterialApp(home: skincare()));
+  runApp(MaterialApp(
+    debugShowCheckedModeBanner: false,
+    home: skincare()));
 }
 
 class acne extends StatefulWidget {
