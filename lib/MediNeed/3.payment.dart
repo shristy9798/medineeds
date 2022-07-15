@@ -77,7 +77,7 @@ class _payState extends State<pay> {
                 size: 25,
               )),
               TextSpan(
-                  text: "499.00",
+                  text: "449.00",
                   style: TextStyle(
                       fontSize: 30,
                       fontWeight: FontWeight.w800,
