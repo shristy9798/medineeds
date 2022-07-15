@@ -1,19 +1,19 @@
-// ignore_for_file: prefer_const_constructors, unnecessary_new, prefer_const_literals_to_create_immutables
+// ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables
 
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(MaterialApp(home: minor()));
+  runApp(MaterialApp(debugShowCheckedModeBanner: false, home: soar()));
 }
 
-class fever extends StatefulWidget {
-  const fever({Key? key}) : super(key: key);
+class soar extends StatefulWidget {
+  const soar({Key? key}) : super(key: key);
 
   @override
-  State<fever> createState() => _feverState();
+  State<soar> createState() => _soarState();
 }
 
-class _feverState extends State<fever> {
+class _soarState extends State<soar> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -68,7 +68,7 @@ class _feverState extends State<fever> {
                         ClipRRect(
                           borderRadius: BorderRadius.circular(12.0),
                           child: Image.asset(
-                            "images/d1.jpg",
+                            "images/4drma.jpg",
                             height: 150.0,
                           ),
                         ),
@@ -76,13 +76,13 @@ class _feverState extends State<fever> {
                             mainAxisAlignment: MainAxisAlignment.center,
                             children: [
                               Text(
-                                "Dr.Anand Sachdeva",
+                                "Dr.Himanshu Raj",
                                 style: TextStyle(
                                   fontSize: 18,
                                   fontFamily: "Oswald",
                                 ),
                               ),
-                              Text("General Physician.",
+                              Text("Dermatologist",
                                   style: TextStyle(
                                       fontSize: 16,
                                       fontFamily: "Ibarra Real Nova",
@@ -90,7 +90,7 @@ class _feverState extends State<fever> {
                                       decoration: TextDecoration.underline)),
                               Padding(
                                 padding: const EdgeInsets.only(top: 2),
-                                child: Text("10 years experience ",
+                                child: Text("8 years experience ",
                                     style: TextStyle(
                                       fontSize: 14,
                                       fontFamily: "Ibarra Real Nova",
@@ -128,7 +128,7 @@ class _feverState extends State<fever> {
                                   style: TextStyle(
                                       fontSize: 18,
                                       fontWeight: FontWeight.w600)),
-                              Text("MBBS",
+                              Text("MBBS,MD-Dermatology,(FAM)",
                                   style: TextStyle(
                                       fontSize: 16,
                                       fontWeight: FontWeight.w200)),
@@ -249,14 +249,14 @@ class _feverState extends State<fever> {
   }
 }
 
-class diziness extends StatefulWidget {
-  const diziness({Key? key}) : super(key: key);
+class mouth extends StatefulWidget {
+  const mouth({Key? key}) : super(key: key);
 
   @override
-  State<diziness> createState() => _dizinessState();
+  State<mouth> createState() => _mouthState();
 }
 
-class _dizinessState extends State<diziness> {
+class _mouthState extends State<mouth> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -311,21 +311,22 @@ class _dizinessState extends State<diziness> {
                         ClipRRect(
                           borderRadius: BorderRadius.circular(12.0),
                           child: Image.asset(
-                            "images/d2.png",
-                            height: 140.0,
+                            "images/4drma.jpg",
+                            height: 150.0,
+                            width: 120,
                           ),
                         ),
                         Column(
                             mainAxisAlignment: MainAxisAlignment.center,
                             children: [
                               Text(
-                                "Dr.sanzida khan",
+                                "Dr.Himanshu Raj",
                                 style: TextStyle(
                                   fontSize: 18,
                                   fontFamily: "Oswald",
                                 ),
                               ),
-                              Text("General Physician.",
+                              Text("Dermatologist",
                                   style: TextStyle(
                                       fontSize: 16,
                                       fontFamily: "Ibarra Real Nova",
@@ -350,7 +351,7 @@ class _dizinessState extends State<diziness> {
                                   size: 25,
                                 )),
                                 TextSpan(
-                                    text: "  4.5",
+                                    text: "  4.9",
                                     style: TextStyle(
                                       fontSize: 16,
                                       color: Colors.black,
@@ -371,7 +372,7 @@ class _dizinessState extends State<diziness> {
                                   style: TextStyle(
                                       fontSize: 18,
                                       fontWeight: FontWeight.w600)),
-                              Text("MBBS",
+                              Text("MBBS,MD-Dermatology,(FAM)",
                                   style: TextStyle(
                                       fontSize: 16,
                                       fontWeight: FontWeight.w200)),
@@ -492,14 +493,14 @@ class _dizinessState extends State<diziness> {
   }
 }
 
-class cough extends StatefulWidget {
-  const cough({Key? key}) : super(key: key);
+class snoring extends StatefulWidget {
+  const snoring({Key? key}) : super(key: key);
 
   @override
-  State<cough> createState() => _coughState();
+  State<snoring> createState() => _snoringState();
 }
 
-class _coughState extends State<cough> {
+class _snoringState extends State<snoring> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -552,23 +553,24 @@ class _coughState extends State<cough> {
                       mainAxisAlignment: MainAxisAlignment.spaceAround,
                       children: [
                         ClipRRect(
-                          borderRadius: BorderRadius.circular(20.0),
+                          borderRadius: BorderRadius.circular(12.0),
                           child: Image.asset(
-                            "images/d3.jpg",
-                            height: 180.0,
+                            "images/4drma.jpg",
+                            height: 150.0,
+                            width: 120,
                           ),
                         ),
                         Column(
                             mainAxisAlignment: MainAxisAlignment.center,
                             children: [
                               Text(
-                                "Dr.Ravikant Kumar",
+                                "Dr.Himanshu Raj",
                                 style: TextStyle(
                                   fontSize: 18,
                                   fontFamily: "Oswald",
                                 ),
                               ),
-                              Text("General Physician.",
+                              Text("Dermatologist",
                                   style: TextStyle(
                                       fontSize: 16,
                                       fontFamily: "Ibarra Real Nova",
@@ -614,7 +616,7 @@ class _coughState extends State<cough> {
                                   style: TextStyle(
                                       fontSize: 18,
                                       fontWeight: FontWeight.w600)),
-                              Text("MBBS",
+                              Text("MBBS,MD-Dermatology,(FAM)",
                                   style: TextStyle(
                                       fontSize: 16,
                                       fontWeight: FontWeight.w200)),
@@ -653,7 +655,7 @@ class _coughState extends State<cough> {
                       size: 30,
                     )),
                     TextSpan(
-                        text: " 3000 consultations",
+                        text: " 6442 consultations",
                         style: TextStyle(
                             color: Colors.black,
                             fontSize: 20,
@@ -735,14 +737,14 @@ class _coughState extends State<cough> {
   }
 }
 
-class minor extends StatefulWidget {
-  const minor({Key? key}) : super(key: key);
+class hearing extends StatefulWidget {
+  const hearing({Key? key}) : super(key: key);
 
   @override
-  State<minor> createState() => _minorState();
+  State<hearing> createState() => _hearingState();
 }
 
-class _minorState extends State<minor> {
+class _hearingState extends State<hearing> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -797,21 +799,22 @@ class _minorState extends State<minor> {
                         ClipRRect(
                           borderRadius: BorderRadius.circular(12.0),
                           child: Image.asset(
-                            "images/d4.jpg",
+                            "images/4drma.jpg",
                             height: 150.0,
+                            width: 120,
                           ),
                         ),
                         Column(
                             mainAxisAlignment: MainAxisAlignment.center,
                             children: [
                               Text(
-                                "Dr. Vikash Kumar",
+                                "Dr.Himanshu Raj",
                                 style: TextStyle(
                                   fontSize: 18,
                                   fontFamily: "Oswald",
                                 ),
                               ),
-                              Text("General Physician.",
+                              Text("Dermatologist",
                                   style: TextStyle(
                                       fontSize: 16,
                                       fontFamily: "Ibarra Real Nova",
@@ -819,7 +822,7 @@ class _minorState extends State<minor> {
                                       decoration: TextDecoration.underline)),
                               Padding(
                                 padding: const EdgeInsets.only(top: 2),
-                                child: Text("7 years experience ",
+                                child: Text("8 years experience ",
                                     style: TextStyle(
                                       fontSize: 14,
                                       fontFamily: "Ibarra Real Nova",
@@ -857,7 +860,7 @@ class _minorState extends State<minor> {
                                   style: TextStyle(
                                       fontSize: 18,
                                       fontWeight: FontWeight.w600)),
-                              Text("MBBS",
+                              Text("MBBS,MD-Dermatology,(FAM)",
                                   style: TextStyle(
                                       fontSize: 16,
                                       fontWeight: FontWeight.w200)),
@@ -896,7 +899,7 @@ class _minorState extends State<minor> {
                       size: 30,
                     )),
                     TextSpan(
-                        text: " 3000 consultations",
+                        text: " 6442 consultations",
                         style: TextStyle(
                             color: Colors.black,
                             fontSize: 20,
