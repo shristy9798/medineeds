@@ -86,9 +86,9 @@ class _mainpageState extends State<mainpage> {
                           child: InkWell(
                             borderRadius: BorderRadius.circular(60),
                             onTap: () {
-                              // Navigator.push(context, MaterialPageRoute(builder: ((context) {
-                              //   return(fever());
-                              // })));
+                              Navigator.push(context, MaterialPageRoute(builder: ((context) {
+                                return(fever());
+                              })));
                             },
                             child: Center(
                               child: Padding(
@@ -164,9 +164,9 @@ class _mainpageState extends State<mainpage> {
                           child: InkWell(
                             borderRadius: BorderRadius.circular(60),
                             onTap: () {
-                              //  Navigator.push(context, MaterialPageRoute(builder: ((context) {
-                              //   return(diziness());
-                              // })));
+                               Navigator.push(context, MaterialPageRoute(builder: ((context) {
+                                return(diziness());
+                              })));
                             },
                             child: Center(
                               child: Padding(
@@ -251,9 +251,9 @@ class _mainpageState extends State<mainpage> {
                           child: InkWell(
                             borderRadius: BorderRadius.circular(60),
                             onTap: () {
-                              //  Navigator.push(context, MaterialPageRoute(builder: ((context) {
-                              //   return(cough());
-                              // })));
+                               Navigator.push(context, MaterialPageRoute(builder: ((context) {
+                                return(cough());
+                              })));
                             },
                             child: Center(
                               child: Padding(
@@ -303,9 +303,9 @@ class _mainpageState extends State<mainpage> {
                           child: InkWell(
                             borderRadius: BorderRadius.circular(60),
                             onTap: () {
-                              //    Navigator.push(context, MaterialPageRoute(builder: ((context) {
-                              //     return(minor());
-                              //   })));
+                                 Navigator.push(context, MaterialPageRoute(builder: ((context) {
+                                  return(minor());
+                                })));
                             },
                             child: Center(
                               child: Padding(
@@ -463,10 +463,10 @@ class _mainpageState extends State<mainpage> {
                             child: InkWell(
                               borderRadius: BorderRadius.circular(60),
                               onTap: () {
-                                // Navigator.push(context,
-                                //     MaterialPageRoute(builder: ((context) {
-                                //   return (acne());
-                                // })));
+                                Navigator.push(context,
+                                    MaterialPageRoute(builder: ((context) {
+                                  return (acne());
+                                })));
                               },
                               child: Center(
                                 child: Padding(
@@ -512,9 +512,9 @@ class _mainpageState extends State<mainpage> {
                             child: InkWell(
                               borderRadius: BorderRadius.circular(60),
                               onTap: () {
-                                //    Navigator.push(context, MaterialPageRoute(builder: ((context) {
-                                //   return(hair());
-                                // })));
+                                   Navigator.push(context, MaterialPageRoute(builder: ((context) {
+                                  return(hair());
+                                })));
                               },
                               child: Center(
                                 child: Padding(
@@ -570,9 +570,9 @@ class _mainpageState extends State<mainpage> {
                             child: InkWell(
                               borderRadius: BorderRadius.circular(60),
                               onTap: () {
-                                //    Navigator.push(context, MaterialPageRoute(builder: ((context) {
-                                //   return(skincare());
-                                // })));
+                                   Navigator.push(context, MaterialPageRoute(builder: ((context) {
+                                  return(skincare());
+                                })));
                               },
                               child: Center(
                                 child: Padding(
@@ -618,9 +618,9 @@ class _mainpageState extends State<mainpage> {
                             child: InkWell(
                               borderRadius: BorderRadius.circular(60),
                               onTap: () {
-                                //    Navigator.push(context, MaterialPageRoute(builder: ((context) {
-                                //   return(vitiligo());
-                                // })));
+                                   Navigator.push(context, MaterialPageRoute(builder: ((context) {
+                                  return(vitiligo());
+                                })));
                               },
                               child: Center(
                                 child: Padding(
