@@ -2,7 +2,9 @@
 
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
 import 'package:medineeds/MediNeed/Doctors/general.dart';
+import 'package:medineeds/MediNeed/Doctors/ortho.dart';
 
 import 'Doctors/2dermatologist.dart';
 
@@ -86,8 +88,9 @@ class _mainpageState extends State<mainpage> {
                           child: InkWell(
                             borderRadius: BorderRadius.circular(60),
                             onTap: () {
-                              Navigator.push(context, MaterialPageRoute(builder: ((context) {
-                                return(fever());
+                              Navigator.push(context,
+                                  MaterialPageRoute(builder: ((context) {
+                                return (fever());
                               })));
                             },
                             child: Center(
@@ -164,8 +167,9 @@ class _mainpageState extends State<mainpage> {
                           child: InkWell(
                             borderRadius: BorderRadius.circular(60),
                             onTap: () {
-                               Navigator.push(context, MaterialPageRoute(builder: ((context) {
-                                return(diziness());
+                              Navigator.push(context,
+                                  MaterialPageRoute(builder: ((context) {
+                                return (diziness());
                               })));
                             },
                             child: Center(
@@ -251,8 +255,9 @@ class _mainpageState extends State<mainpage> {
                           child: InkWell(
                             borderRadius: BorderRadius.circular(60),
                             onTap: () {
-                               Navigator.push(context, MaterialPageRoute(builder: ((context) {
-                                return(cough());
+                              Navigator.push(context,
+                                  MaterialPageRoute(builder: ((context) {
+                                return (cough());
                               })));
                             },
                             child: Center(
@@ -303,9 +308,10 @@ class _mainpageState extends State<mainpage> {
                           child: InkWell(
                             borderRadius: BorderRadius.circular(60),
                             onTap: () {
-                                 Navigator.push(context, MaterialPageRoute(builder: ((context) {
-                                  return(minor());
-                                })));
+                              Navigator.push(context,
+                                  MaterialPageRoute(builder: ((context) {
+                                return (minor());
+                              })));
                             },
                             child: Center(
                               child: Padding(
@@ -512,8 +518,9 @@ class _mainpageState extends State<mainpage> {
                             child: InkWell(
                               borderRadius: BorderRadius.circular(60),
                               onTap: () {
-                                   Navigator.push(context, MaterialPageRoute(builder: ((context) {
-                                  return(hair());
+                                Navigator.push(context,
+                                    MaterialPageRoute(builder: ((context) {
+                                  return (hair());
                                 })));
                               },
                               child: Center(
@@ -570,8 +577,9 @@ class _mainpageState extends State<mainpage> {
                             child: InkWell(
                               borderRadius: BorderRadius.circular(60),
                               onTap: () {
-                                   Navigator.push(context, MaterialPageRoute(builder: ((context) {
-                                  return(skincare());
+                                Navigator.push(context,
+                                    MaterialPageRoute(builder: ((context) {
+                                  return (skincare());
                                 })));
                               },
                               child: Center(
@@ -618,8 +626,9 @@ class _mainpageState extends State<mainpage> {
                             child: InkWell(
                               borderRadius: BorderRadius.circular(60),
                               onTap: () {
-                                   Navigator.push(context, MaterialPageRoute(builder: ((context) {
-                                  return(vitiligo());
+                                Navigator.push(context,
+                                    MaterialPageRoute(builder: ((context) {
+                                  return (vitiligo());
                                 })));
                               },
                               child: Center(
@@ -837,7 +846,12 @@ class _mainpageState extends State<mainpage> {
                               ),
                               child: InkWell(
                                 borderRadius: BorderRadius.circular(60),
-                                onTap: () {},
+                                onTap: () {
+                                  Navigator.push(context,
+                                      MaterialPageRoute(builder: (context) {
+                                    return (knee());
+                                  }));
+                                },
                                 child: Center(
                                   child: Padding(
                                     padding: const EdgeInsets.fromLTRB(
