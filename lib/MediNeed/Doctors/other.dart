@@ -68,7 +68,7 @@ class _pedState extends State<ped> {
                         ClipRRect(
                           borderRadius: BorderRadius.circular(12.0),
                           child: Image.asset(
-                            "images/4drma.jpg",
+                            "images/ot1.jpg",
                             height: 150.0,
                           ),
                         ),
@@ -76,13 +76,13 @@ class _pedState extends State<ped> {
                             mainAxisAlignment: MainAxisAlignment.center,
                             children: [
                               Text(
-                                "Dr.Himanshu Raj",
+                                "Dr.Sonam Singh",
                                 style: TextStyle(
                                   fontSize: 18,
                                   fontFamily: "Oswald",
                                 ),
                               ),
-                              Text("Dermatologist",
+                              Text("pediatrics",
                                   style: TextStyle(
                                       fontSize: 16,
                                       fontFamily: "Ibarra Real Nova",
@@ -128,7 +128,7 @@ class _pedState extends State<ped> {
                                   style: TextStyle(
                                       fontSize: 18,
                                       fontWeight: FontWeight.w600)),
-                              Text("MBBS,MD-Dermatology,(FAM)",
+                              Text("MBBS,MD-pediatrics",
                                   style: TextStyle(
                                       fontSize: 16,
                                       fontWeight: FontWeight.w200)),
@@ -311,7 +311,7 @@ class _gynoState extends State<gyno> {
                         ClipRRect(
                           borderRadius: BorderRadius.circular(12.0),
                           child: Image.asset(
-                            "images/4drma.jpg",
+                            "images/g1.jpg",
                             height: 150.0,
                             width: 120,
                           ),
@@ -320,13 +320,13 @@ class _gynoState extends State<gyno> {
                             mainAxisAlignment: MainAxisAlignment.center,
                             children: [
                               Text(
-                                "Dr.Himanshu Raj",
+                                "Dr.Shivani singh",
                                 style: TextStyle(
                                   fontSize: 18,
                                   fontFamily: "Oswald",
                                 ),
                               ),
-                              Text("Dermatologist",
+                              Text("Gynecologist",
                                   style: TextStyle(
                                       fontSize: 16,
                                       fontFamily: "Ibarra Real Nova",
@@ -372,7 +372,7 @@ class _gynoState extends State<gyno> {
                                   style: TextStyle(
                                       fontSize: 18,
                                       fontWeight: FontWeight.w600)),
-                              Text("MBBS,MD-Dermatology,(FAM)",
+                              Text("MBBS",
                                   style: TextStyle(
                                       fontSize: 16,
                                       fontWeight: FontWeight.w200)),
@@ -564,13 +564,13 @@ class _psyState extends State<psy> {
                             mainAxisAlignment: MainAxisAlignment.center,
                             children: [
                               Text(
-                                "Dr.Himanshu Raj",
+                                "Dr.  Raman Raj",
                                 style: TextStyle(
                                   fontSize: 18,
                                   fontFamily: "Oswald",
                                 ),
                               ),
-                              Text("Dermatologist",
+                              Text("Psychiatrist",
                                   style: TextStyle(
                                       fontSize: 16,
                                       fontFamily: "Ibarra Real Nova",
@@ -616,7 +616,7 @@ class _psyState extends State<psy> {
                                   style: TextStyle(
                                       fontSize: 18,
                                       fontWeight: FontWeight.w600)),
-                              Text("MBBS,MD-Dermatology,(FAM)",
+                              Text("MBBS",
                                   style: TextStyle(
                                       fontSize: 16,
                                       fontWeight: FontWeight.w200)),
@@ -799,7 +799,7 @@ class _dentalState extends State<dental> {
                         ClipRRect(
                           borderRadius: BorderRadius.circular(12.0),
                           child: Image.asset(
-                            "images/4drma.jpg",
+                            "images/dn.jpg",
                             height: 150.0,
                             width: 120,
                           ),
@@ -808,13 +808,13 @@ class _dentalState extends State<dental> {
                             mainAxisAlignment: MainAxisAlignment.center,
                             children: [
                               Text(
-                                "Dr.Himanshu Raj",
+                                "Dr.Gaurav Punj",
                                 style: TextStyle(
                                   fontSize: 18,
                                   fontFamily: "Oswald",
                                 ),
                               ),
-                              Text("Dermatologist",
+                              Text("Dentist",
                                   style: TextStyle(
                                       fontSize: 16,
                                       fontFamily: "Ibarra Real Nova",
@@ -860,7 +860,7 @@ class _dentalState extends State<dental> {
                                   style: TextStyle(
                                       fontSize: 18,
                                       fontWeight: FontWeight.w600)),
-                              Text("MBBS,MD-Dermatology,(FAM)",
+                              Text("MBBS",
                                   style: TextStyle(
                                       fontSize: 16,
                                       fontWeight: FontWeight.w200)),
@@ -1043,7 +1043,7 @@ class _pulState extends State<pul> {
                         ClipRRect(
                           borderRadius: BorderRadius.circular(12.0),
                           child: Image.asset(
-                            "images/4drma.jpg",
+                            "images/d4.jpg",
                             height: 150.0,
                             width: 120,
                           ),
@@ -1052,13 +1052,13 @@ class _pulState extends State<pul> {
                             mainAxisAlignment: MainAxisAlignment.center,
                             children: [
                               Text(
-                                "Dr.Himanshu Raj",
+                                "Dr.Ramesh Raj",
                                 style: TextStyle(
                                   fontSize: 18,
                                   fontFamily: "Oswald",
                                 ),
                               ),
-                              Text("Dermatologist",
+                              Text("pulmonologist",
                                   style: TextStyle(
                                       fontSize: 16,
                                       fontFamily: "Ibarra Real Nova",
@@ -1104,7 +1104,7 @@ class _pulState extends State<pul> {
                                   style: TextStyle(
                                       fontSize: 18,
                                       fontWeight: FontWeight.w600)),
-                              Text("MBBS,MD-Dermatology,(FAM)",
+                              Text("MBBS",
                                   style: TextStyle(
                                       fontSize: 16,
                                       fontWeight: FontWeight.w200)),
@@ -1287,7 +1287,7 @@ class _dietState extends State<diet> {
                         ClipRRect(
                           borderRadius: BorderRadius.circular(12.0),
                           child: Image.asset(
-                            "images/4drma.jpg",
+                            "images/n1.jpg",
                             height: 150.0,
                             width: 120,
                           ),
@@ -1296,13 +1296,13 @@ class _dietState extends State<diet> {
                             mainAxisAlignment: MainAxisAlignment.center,
                             children: [
                               Text(
-                                "Dr.Himanshu Raj",
+                                "Dr.Roshni Senghal",
                                 style: TextStyle(
                                   fontSize: 18,
                                   fontFamily: "Oswald",
                                 ),
                               ),
-                              Text("Dermatologist",
+                              Text("Dietitian//Nutritionist",
                                   style: TextStyle(
                                       fontSize: 16,
                                       fontFamily: "Ibarra Real Nova",
@@ -1348,7 +1348,7 @@ class _dietState extends State<diet> {
                                   style: TextStyle(
                                       fontSize: 18,
                                       fontWeight: FontWeight.w600)),
-                              Text("MBBS,MD-Dermatology,(FAM)",
+                              Text(" Master in Dietetics Management",
                                   style: TextStyle(
                                       fontSize: 16,
                                       fontWeight: FontWeight.w200)),

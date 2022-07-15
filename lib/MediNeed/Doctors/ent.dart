@@ -76,13 +76,13 @@ class _soarState extends State<soar> {
                             mainAxisAlignment: MainAxisAlignment.center,
                             children: [
                               Text(
-                                "Dr.Himanshu Raj",
+                                "Dr.Shivam Raj",
                                 style: TextStyle(
                                   fontSize: 18,
                                   fontFamily: "Oswald",
                                 ),
                               ),
-                              Text("Dermatologist",
+                              Text("Otorhinolaryngologist",
                                   style: TextStyle(
                                       fontSize: 16,
                                       fontFamily: "Ibarra Real Nova",
@@ -128,7 +128,7 @@ class _soarState extends State<soar> {
                                   style: TextStyle(
                                       fontSize: 18,
                                       fontWeight: FontWeight.w600)),
-                              Text("MBBS,MD-Dermatology,(FAM)",
+                              Text("MBBS,MS-ENT",
                                   style: TextStyle(
                                       fontSize: 16,
                                       fontWeight: FontWeight.w200)),
@@ -311,7 +311,7 @@ class _mouthState extends State<mouth> {
                         ClipRRect(
                           borderRadius: BorderRadius.circular(12.0),
                           child: Image.asset(
-                            "images/4drma.jpg",
+                            "images/d1.jpg",
                             height: 150.0,
                             width: 120,
                           ),
@@ -320,13 +320,13 @@ class _mouthState extends State<mouth> {
                             mainAxisAlignment: MainAxisAlignment.center,
                             children: [
                               Text(
-                                "Dr.Himanshu Raj",
+                                "Dr.Vikram Raj",
                                 style: TextStyle(
                                   fontSize: 18,
                                   fontFamily: "Oswald",
                                 ),
                               ),
-                              Text("Dermatologist",
+                              Text("otorhinolaryngologist",
                                   style: TextStyle(
                                       fontSize: 16,
                                       fontFamily: "Ibarra Real Nova",
@@ -334,7 +334,7 @@ class _mouthState extends State<mouth> {
                                       decoration: TextDecoration.underline)),
                               Padding(
                                 padding: const EdgeInsets.only(top: 2),
-                                child: Text("8 years experience ",
+                                child: Text("9 years experience ",
                                     style: TextStyle(
                                       fontSize: 14,
                                       fontFamily: "Ibarra Real Nova",
@@ -555,7 +555,7 @@ class _snoringState extends State<snoring> {
                         ClipRRect(
                           borderRadius: BorderRadius.circular(12.0),
                           child: Image.asset(
-                            "images/4drma.jpg",
+                            "images/3drma.jpg",
                             height: 150.0,
                             width: 120,
                           ),
@@ -564,13 +564,13 @@ class _snoringState extends State<snoring> {
                             mainAxisAlignment: MainAxisAlignment.center,
                             children: [
                               Text(
-                                "Dr.Himanshu Raj",
+                                "Dr.shilpa singh",
                                 style: TextStyle(
                                   fontSize: 18,
                                   fontFamily: "Oswald",
                                 ),
                               ),
-                              Text("Dermatologist",
+                              Text("otorhinolaryngologist",
                                   style: TextStyle(
                                       fontSize: 16,
                                       fontFamily: "Ibarra Real Nova",
@@ -616,7 +616,7 @@ class _snoringState extends State<snoring> {
                                   style: TextStyle(
                                       fontSize: 18,
                                       fontWeight: FontWeight.w600)),
-                              Text("MBBS,MD-Dermatology,(FAM)",
+                              Text("MBBS,MS-ENT",
                                   style: TextStyle(
                                       fontSize: 16,
                                       fontWeight: FontWeight.w200)),
@@ -799,7 +799,7 @@ class _hearingState extends State<hearing> {
                         ClipRRect(
                           borderRadius: BorderRadius.circular(12.0),
                           child: Image.asset(
-                            "images/4drma.jpg",
+                            "images/1drma.jpg",
                             height: 150.0,
                             width: 120,
                           ),
@@ -808,13 +808,13 @@ class _hearingState extends State<hearing> {
                             mainAxisAlignment: MainAxisAlignment.center,
                             children: [
                               Text(
-                                "Dr.Himanshu Raj",
+                                "Dr.Krish Raj",
                                 style: TextStyle(
                                   fontSize: 18,
                                   fontFamily: "Oswald",
                                 ),
                               ),
-                              Text("Dermatologist",
+                              Text("otorhinolaryngologist",
                                   style: TextStyle(
                                       fontSize: 16,
                                       fontFamily: "Ibarra Real Nova",
@@ -860,7 +860,7 @@ class _hearingState extends State<hearing> {
                                   style: TextStyle(
                                       fontSize: 18,
                                       fontWeight: FontWeight.w600)),
-                              Text("MBBS,MD-Dermatology,(FAM)",
+                              Text("MBBS,MS-ENT",
                                   style: TextStyle(
                                       fontSize: 16,
                                       fontWeight: FontWeight.w200)),

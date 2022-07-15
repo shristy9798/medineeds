@@ -68,7 +68,7 @@ class _kneeState extends State<knee> {
                         ClipRRect(
                           borderRadius: BorderRadius.circular(12.0),
                           child: Image.asset(
-                            "images/4drma.jpg",
+                            "images/o1.jpg",
                             height: 150.0,
                           ),
                         ),
@@ -76,13 +76,13 @@ class _kneeState extends State<knee> {
                             mainAxisAlignment: MainAxisAlignment.center,
                             children: [
                               Text(
-                                "Dr.Himanshu Raj",
+                                "Dr.Dipak Raj",
                                 style: TextStyle(
                                   fontSize: 18,
                                   fontFamily: "Oswald",
                                 ),
                               ),
-                              Text("Dermatologist",
+                              Text("Orthopedist",
                                   style: TextStyle(
                                       fontSize: 16,
                                       fontFamily: "Ibarra Real Nova",
@@ -311,7 +311,7 @@ class _shoulderState extends State<shoulder> {
                         ClipRRect(
                           borderRadius: BorderRadius.circular(12.0),
                           child: Image.asset(
-                            "images/4drma.jpg",
+                            "images/o2.jpg",
                             height: 150.0,
                             width: 120,
                           ),
@@ -320,13 +320,13 @@ class _shoulderState extends State<shoulder> {
                             mainAxisAlignment: MainAxisAlignment.center,
                             children: [
                               Text(
-                                "Dr.Himanshu Raj",
+                                "Dr.hemant singh",
                                 style: TextStyle(
                                   fontSize: 18,
                                   fontFamily: "Oswald",
                                 ),
                               ),
-                              Text("Dermatologist",
+                              Text("Orthopedist",
                                   style: TextStyle(
                                       fontSize: 16,
                                       fontFamily: "Ibarra Real Nova",
@@ -334,7 +334,7 @@ class _shoulderState extends State<shoulder> {
                                       decoration: TextDecoration.underline)),
                               Padding(
                                 padding: const EdgeInsets.only(top: 2),
-                                child: Text("8 years experience ",
+                                child: Text("4 years experience ",
                                     style: TextStyle(
                                       fontSize: 14,
                                       fontFamily: "Ibarra Real Nova",
@@ -372,7 +372,7 @@ class _shoulderState extends State<shoulder> {
                                   style: TextStyle(
                                       fontSize: 18,
                                       fontWeight: FontWeight.w600)),
-                              Text("MBBS,MD-Dermatology,(FAM)",
+                              Text("MBBS,(FAM)",
                                   style: TextStyle(
                                       fontSize: 16,
                                       fontWeight: FontWeight.w200)),
@@ -555,7 +555,7 @@ class _legState extends State<leg> {
                         ClipRRect(
                           borderRadius: BorderRadius.circular(12.0),
                           child: Image.asset(
-                            "images/4drma.jpg",
+                            "images/2drma.jpg",
                             height: 150.0,
                             width: 120,
                           ),
@@ -564,13 +564,13 @@ class _legState extends State<leg> {
                             mainAxisAlignment: MainAxisAlignment.center,
                             children: [
                               Text(
-                                "Dr.Himanshu Raj",
+                                "Dr.pratigya Gaur",
                                 style: TextStyle(
                                   fontSize: 18,
                                   fontFamily: "Oswald",
                                 ),
                               ),
-                              Text("Dermatologist",
+                              Text("Orthopedist",
                                   style: TextStyle(
                                       fontSize: 16,
                                       fontFamily: "Ibarra Real Nova",
@@ -616,7 +616,7 @@ class _legState extends State<leg> {
                                   style: TextStyle(
                                       fontSize: 18,
                                       fontWeight: FontWeight.w600)),
-                              Text("MBBS,MD-Dermatology,(FAM)",
+                              Text("MBBS",
                                   style: TextStyle(
                                       fontSize: 16,
                                       fontWeight: FontWeight.w200)),
@@ -799,7 +799,7 @@ class _carpolState extends State<carpol> {
                         ClipRRect(
                           borderRadius: BorderRadius.circular(12.0),
                           child: Image.asset(
-                            "images/4drma.jpg",
+                            "images/d2.png",
                             height: 150.0,
                             width: 120,
                           ),
@@ -808,13 +808,13 @@ class _carpolState extends State<carpol> {
                             mainAxisAlignment: MainAxisAlignment.center,
                             children: [
                               Text(
-                                "Dr.Himanshu Raj",
+                                "Dr.Sudha Raj",
                                 style: TextStyle(
                                   fontSize: 18,
                                   fontFamily: "Oswald",
                                 ),
                               ),
-                              Text("Dermatologist",
+                              Text("Orthopedist",
                                   style: TextStyle(
                                       fontSize: 16,
                                       fontFamily: "Ibarra Real Nova",
