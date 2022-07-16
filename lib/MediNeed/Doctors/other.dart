@@ -1292,67 +1292,73 @@ class _dietState extends State<diet> {
                             width: 120,
                           ),
                         ),
-                        Column(
-                            mainAxisAlignment: MainAxisAlignment.center,
-                            children: [
-                              Text(
-                                "Dr.Roshni Senghal",
-                                style: TextStyle(
-                                  fontSize: 18,
-                                  fontFamily: "Oswald",
-                                ),
-                              ),
-                              Text("Dietitian//Nutritionist",
+                        Flexible(
+                          child: Column(
+                              mainAxisAlignment: MainAxisAlignment.center,
+                              children: [
+                                Text(
+                                  "Dr.Roshni Senghal",
                                   style: TextStyle(
-                                      fontSize: 16,
-                                      fontFamily: "Ibarra Real Nova",
-                                      color: Color.fromARGB(95, 26, 25, 25),
-                                      decoration: TextDecoration.underline)),
-                              Padding(
-                                padding: const EdgeInsets.only(top: 2),
-                                child: Text("8 years experience ",
+                                    fontSize: 18,
+                                    fontFamily: "Oswald",
+                                  ),
+                                ),
+                                Text("Dietitian//Nutritionist",
                                     style: TextStyle(
-                                      fontSize: 14,
-                                      fontFamily: "Ibarra Real Nova",
-                                      color: Colors.black,
-                                      fontWeight: FontWeight.w600,
-                                    )),
-                              ),
-                              RichText(
-                                  text: TextSpan(children: [
-                                WidgetSpan(
-                                    child: Icon(
-                                  Icons.star,
-                                  color: Color.fromARGB(255, 40, 178, 45),
-                                  size: 25,
-                                )),
-                                TextSpan(
-                                    text: "  4.9",
-                                    style: TextStyle(
-                                      fontSize: 16,
-                                      color: Colors.black,
-                                    )),
-                                TextSpan(
-                                    text: " Rated by 2000+",
+                                        fontSize: 16,
+                                        fontFamily: "Ibarra Real Nova",
+                                        color: Color.fromARGB(95, 26, 25, 25),
+                                        decoration: TextDecoration.underline)),
+                                Padding(
+                                  padding: const EdgeInsets.only(top: 2),
+                                  child: Text("8 years experience ",
+                                      style: TextStyle(
+                                        fontSize: 14,
+                                        fontFamily: "Ibarra Real Nova",
+                                        color: Colors.black,
+                                        fontWeight: FontWeight.w600,
+                                      )),
+                                ),
+                                RichText(
+                                    text: TextSpan(children: [
+                                  WidgetSpan(
+                                      child: Icon(
+                                    Icons.star,
+                                    color: Color.fromARGB(255, 40, 178, 45),
+                                    size: 25,
+                                  )),
+                                  TextSpan(
+                                      text: "  4.9",
+                                      style: TextStyle(
+                                        fontSize: 16,
+                                        color: Colors.black,
+                                      )),
+                                  TextSpan(
+                                      text: " Rated by 2000+",
+                                      style: TextStyle(
+                                          color: Colors.black,
+                                          fontSize: 16,
+                                          fontWeight: FontWeight.w400)),
+                                ])),
+                                Text("patients",
                                     style: TextStyle(
                                         color: Colors.black,
                                         fontSize: 16,
                                         fontWeight: FontWeight.w400)),
-                              ])),
-                              Text("patients",
-                                  style: TextStyle(
-                                      color: Colors.black,
-                                      fontSize: 16,
-                                      fontWeight: FontWeight.w400)),
-                              Text("Qualification:",
-                                  style: TextStyle(
-                                      fontSize: 18,
-                                      fontWeight: FontWeight.w600)),
-                              Text(" Master in Dietetics Management",
-                                  style: TextStyle(
-                                      fontSize: 16,
-                                      fontWeight: FontWeight.w200)),
-                            ]),
+                                Text("Qualification:",
+                                    style: TextStyle(
+                                        fontSize: 18,
+                                        fontWeight: FontWeight.w600)),
+                                Padding(
+                                  padding:
+                                      const EdgeInsets.fromLTRB(35, 0, 0, 0),
+                                  child: Text(" Master in Dietetics Management",
+                                      style: TextStyle(
+                                          fontSize: 16,
+                                          fontWeight: FontWeight.w200)),
+                                ),
+                              ]),
+                        ),
                       ],
                     )),
               ),

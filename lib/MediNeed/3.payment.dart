@@ -1,17 +1,22 @@
 // ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables
 
+
 import 'package:flutter/material.dart';
+import 'package:medineeds/MediNeed/2.mainpage.dart';
+
 
 void main() {
   runApp(MaterialApp(
     debugShowCheckedModeBanner: false,
-    home: pay(),
+    home: pay(
+      time: '',
+    ),
   ));
 }
 
 class pay extends StatefulWidget {
-  const pay({Key? key}) : super(key: key);
-
+  pay({Key? key, required this.time}) : super(key: key);
+  final String time;
   @override
   State<pay> createState() => _payState();
 }
@@ -37,22 +42,27 @@ class _payState extends State<pay> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text(
-          "Consumer Payments",
-          style: TextStyle(
-            color: Colors.white,
-            fontSize: 18,
-          ),
+        backgroundColor: Color.fromARGB(220, 45, 57, 121),
+        title: Row(
+          mainAxisAlignment: MainAxisAlignment.start,
+          children: [
+            Image(
+              image: AssetImage("images/pay.png"),
+              fit: BoxFit.cover,
+              height: 30,
+              width: 30,
+            ),
+            Container(
+                padding: const EdgeInsets.all(8.0),
+                child: Text(
+                  ' Payment Window',
+                  style: TextStyle(fontSize: 26),
+                )),
+          ],
         ),
       ),
       body: ListView(
         children: [
-          /*Image(
-            image: AssetImage("images/pay.jpg"),
-            height: 100,
-            width: 100,
-            fit: BoxFit.cover,
-          ),*/
           Container(
             padding: EdgeInsets.all(18), //insert space within
             margin: EdgeInsets.all(20),
@@ -62,27 +72,29 @@ class _payState extends State<pay> {
               borderRadius: BorderRadius.circular(20),
             ),
 
-            child: RichText(
-                text: TextSpan(children: [
-              TextSpan(
-                  text: "  To pay:",
-                  style: TextStyle(
-                      fontWeight: FontWeight.w500,
-                      fontSize: 25,
-                      color: Colors.black)),
-              WidgetSpan(
-                  child: Icon(
-                Icons.currency_rupee,
-                color: Colors.black,
-                size: 25,
-              )),
-              TextSpan(
-                  text: "449.00",
-                  style: TextStyle(
-                      fontSize: 30,
-                      fontWeight: FontWeight.w800,
-                      color: Colors.black)),
-            ])),
+            child: Center(
+              child: RichText(
+                  text: TextSpan(children: [
+                TextSpan(
+                    text: "To pay :",
+                    style: TextStyle(
+                        fontWeight: FontWeight.w800,
+                        fontSize: 25,
+                        color: Colors.black)),
+                WidgetSpan(
+                    child: Icon(
+                  Icons.currency_rupee,
+                  color: Colors.black,
+                  size: 28,
+                )),
+                TextSpan(
+                    text: "449.00",
+                    style: TextStyle(
+                        fontSize: 26,
+                        fontWeight: FontWeight.w800,
+                        color: Colors.black)),
+              ])),
+            ),
           ),
           Text("Pay Here",
               style: TextStyle(
@@ -105,7 +117,7 @@ class _payState extends State<pay> {
                     WidgetSpan(
                         child: Icon(
                       Icons.wallet,
-                      color: Color.fromARGB(255, 8, 50, 66),
+                      color: Color.fromARGB(220, 45, 57, 121),
                       size: 30,
                     )),
                     TextSpan(
@@ -215,12 +227,13 @@ class _payState extends State<pay> {
                         cvv.text.length == 3 &&
                         valid.text.isNotEmpty &&
                         valid.text.length == 5) {
-                      //create();
-                      /* Navigator.push(context,
-                            MaterialPageRoute(builder: (context) {
-                          return (mainpage());
-                        }));
-                      }*/
+                      setState(() {
+                        card.clear();
+                        name.clear();
+                        cvv.clear();
+                        valid.clear();
+                      });
+                      payment(context);
                     }
                   },
                   child: Text('Pay'),
@@ -231,5 +244,37 @@ class _payState extends State<pay> {
         ],
       ),
     );
+  }
+
+  void payment(BuildContext context) {
+    var alertDialog = AlertDialog(
+      title: Text(
+        'Booking Confirmed',
+        style: TextStyle(
+            color: Color.fromARGB(220, 45, 57, 121),
+            fontWeight: FontWeight.bold,
+            fontSize: 28),
+      ),
+      content: Text(
+          'Your Slot has been booked successfully\nSelected time slot : ${widget.time}\nDoctor will call you soon'),
+      actions: [
+        ElevatedButton(
+            style: ElevatedButton.styleFrom(
+              primary: Color.fromARGB(220, 45, 57, 121),
+            ),
+            onPressed: () {
+              Navigator.push(context, MaterialPageRoute(builder: (context) {
+                return (mainpage());
+              }));
+            },
+            child: Text("Return to main page")),
+      ],
+    );
+
+    showDialog(
+        context: context,
+        builder: (context) {
+          return alertDialog;
+        });
   }
 }

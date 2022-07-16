@@ -1,6 +1,7 @@
 // ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables
 
 import 'package:flutter/material.dart';
+import 'package:medineeds/MediNeed/3.payment.dart';
 
 void main() {
   runApp(MaterialApp(debugShowCheckedModeBanner: false, home: soar()));
@@ -72,67 +73,64 @@ class _soarState extends State<soar> {
                             height: 150.0,
                           ),
                         ),
-                        Column(
-                            mainAxisAlignment: MainAxisAlignment.center,
-                            children: [
-                              Text(
-                                "Dr.Shivam Raj",
-                                style: TextStyle(
-                                  fontSize: 18,
-                                  fontFamily: "Oswald",
+                        Flexible(
+                          child: Column(
+                              mainAxisAlignment: MainAxisAlignment.center,
+                              children: [
+                                Text(
+                                  "Dr.Shivam Raj",
+                                  style: TextStyle(
+                                    fontSize: 18,
+                                    fontFamily: "Oswald",
+                                  ),
                                 ),
-                              ),
-                              Text("Otorhinolaryngologist",
-                                  style: TextStyle(
-                                      fontSize: 16,
-                                      fontFamily: "Ibarra Real Nova",
-                                      color: Color.fromARGB(95, 26, 25, 25),
-                                      decoration: TextDecoration.underline)),
-                              Padding(
-                                padding: const EdgeInsets.only(top: 2),
-                                child: Text("8 years experience ",
+                                Text("Otorhinolaryngologist",
                                     style: TextStyle(
-                                      fontSize: 14,
-                                      fontFamily: "Ibarra Real Nova",
-                                      color: Colors.black,
-                                      fontWeight: FontWeight.w600,
-                                    )),
-                              ),
-                              RichText(
-                                  text: TextSpan(children: [
-                                WidgetSpan(
-                                    child: Icon(
-                                  Icons.star,
-                                  color: Color.fromARGB(255, 40, 178, 45),
-                                  size: 25,
-                                )),
-                                TextSpan(
-                                    text: "  4.9",
-                                    style: TextStyle(
-                                      fontSize: 16,
-                                      color: Colors.black,
-                                    )),
-                                TextSpan(
-                                    text: " Rated by 2000+",
-                                    style: TextStyle(
-                                        color: Colors.black,
                                         fontSize: 16,
-                                        fontWeight: FontWeight.w400)),
-                              ])),
-                              Text("patients",
-                                  style: TextStyle(
-                                      color: Colors.black,
-                                      fontSize: 16,
-                                      fontWeight: FontWeight.w400)),
-                              Text("Qualification:",
-                                  style: TextStyle(
-                                      fontSize: 18,
-                                      fontWeight: FontWeight.w600)),
-                              Text("MBBS,MS-ENT",
-                                  style: TextStyle(
-                                      fontSize: 16,
-                                      fontWeight: FontWeight.w200)),
-                            ]),
+                                        fontFamily: "Ibarra Real Nova",
+                                        color: Color.fromARGB(95, 26, 25, 25),
+                                        decoration: TextDecoration.underline)),
+                                Padding(
+                                  padding: const EdgeInsets.only(top: 2),
+                                  child: Text("8 years experience ",
+                                      style: TextStyle(
+                                        fontSize: 14,
+                                        fontFamily: "Ibarra Real Nova",
+                                        color: Colors.black,
+                                        fontWeight: FontWeight.w600,
+                                      )),
+                                ),
+                                RichText(
+                                    text: TextSpan(children: [
+                                  WidgetSpan(
+                                      child: Icon(
+                                    Icons.star,
+                                    color: Color.fromARGB(255, 40, 178, 45),
+                                    size: 25,
+                                  )),
+                                  TextSpan(
+                                      text: "  4.9",
+                                      style: TextStyle(
+                                        fontSize: 16,
+                                        color: Colors.black,
+                                      )),
+                                  TextSpan(
+                                      text: " Rated by 2000+ Patients",
+                                      style: TextStyle(
+                                          color: Colors.black,
+                                          fontSize: 16,
+                                          fontWeight: FontWeight.w400)),
+                                ])),
+                                Text("Qualification:",
+                                    style: TextStyle(
+                                        fontSize: 18,
+                                        fontWeight: FontWeight.w600)),
+                                Text("MBBS,MS-ENT",
+                                    style: TextStyle(
+                                        fontSize: 16,
+                                        fontWeight: FontWeight.w200)),
+                              ]),
+                        ),
                       ],
                     )),
               ),
@@ -217,28 +215,48 @@ class _soarState extends State<soar> {
                           style: ElevatedButton.styleFrom(
                             primary: Color.fromARGB(255, 40, 91, 178),
                           ),
-                          onPressed: () {},
+                          onPressed: () {
+                            Navigator.push(context,
+                                MaterialPageRoute(builder: (context) {
+                              return (pay(time: "4:30 PM"));
+                            }));
+                          },
                           child: Text("4:30 PM",
                               style: TextStyle(fontWeight: FontWeight.w400))),
                       ElevatedButton(
                           style: ElevatedButton.styleFrom(
                             primary: Color.fromARGB(255, 40, 91, 178),
                           ),
-                          onPressed: () {},
+                          onPressed: () {
+                            Navigator.push(context,
+                                MaterialPageRoute(builder: (context) {
+                              return (pay(time: "6:00 PM"));
+                            }));
+                          },
                           child: Text("6:00 PM",
                               style: TextStyle(fontWeight: FontWeight.w400))),
                       ElevatedButton(
                           style: ElevatedButton.styleFrom(
                             primary: Color.fromARGB(255, 40, 91, 178),
                           ),
-                          onPressed: () {},
+                          onPressed: () {
+                            Navigator.push(context,
+                                MaterialPageRoute(builder: (context) {
+                              return (pay(time: "7:30 PM"));
+                            }));
+                          },
                           child: Text("7:30 PM",
                               style: TextStyle(fontWeight: FontWeight.w400))),
                       ElevatedButton(
                           style: ElevatedButton.styleFrom(
                             primary: Color.fromARGB(255, 40, 91, 178),
                           ),
-                          onPressed: () {},
+                          onPressed: () {
+                            Navigator.push(context,
+                                MaterialPageRoute(builder: (context) {
+                              return (pay(time: "9:00 PM"));
+                            }));
+                          },
                           child: Text("9:00 PM",
                               style: TextStyle(fontWeight: FontWeight.w400)))
                     ],
@@ -316,67 +334,69 @@ class _mouthState extends State<mouth> {
                             width: 120,
                           ),
                         ),
-                        Column(
-                            mainAxisAlignment: MainAxisAlignment.center,
-                            children: [
-                              Text(
-                                "Dr.Vikram Raj",
-                                style: TextStyle(
-                                  fontSize: 18,
-                                  fontFamily: "Oswald",
-                                ),
-                              ),
-                              Text("otorhinolaryngologist",
+                        Flexible(
+                          child: Column(
+                              mainAxisAlignment: MainAxisAlignment.center,
+                              children: [
+                                Text(
+                                  "Dr.Vikram Raj",
                                   style: TextStyle(
-                                      fontSize: 16,
-                                      fontFamily: "Ibarra Real Nova",
-                                      color: Color.fromARGB(95, 26, 25, 25),
-                                      decoration: TextDecoration.underline)),
-                              Padding(
-                                padding: const EdgeInsets.only(top: 2),
-                                child: Text("9 years experience ",
+                                    fontSize: 18,
+                                    fontFamily: "Oswald",
+                                  ),
+                                ),
+                                Text("otorhinolaryngologist",
                                     style: TextStyle(
-                                      fontSize: 14,
-                                      fontFamily: "Ibarra Real Nova",
-                                      color: Colors.black,
-                                      fontWeight: FontWeight.w600,
-                                    )),
-                              ),
-                              RichText(
-                                  text: TextSpan(children: [
-                                WidgetSpan(
-                                    child: Icon(
-                                  Icons.star,
-                                  color: Color.fromARGB(255, 40, 178, 45),
-                                  size: 25,
-                                )),
-                                TextSpan(
-                                    text: "  4.9",
-                                    style: TextStyle(
-                                      fontSize: 16,
-                                      color: Colors.black,
-                                    )),
-                                TextSpan(
-                                    text: " Rated by 2000+",
+                                        fontSize: 16,
+                                        fontFamily: "Ibarra Real Nova",
+                                        color: Color.fromARGB(95, 26, 25, 25),
+                                        decoration: TextDecoration.underline)),
+                                Padding(
+                                  padding: const EdgeInsets.only(top: 2),
+                                  child: Text("9 years experience ",
+                                      style: TextStyle(
+                                        fontSize: 14,
+                                        fontFamily: "Ibarra Real Nova",
+                                        color: Colors.black,
+                                        fontWeight: FontWeight.w600,
+                                      )),
+                                ),
+                                RichText(
+                                    text: TextSpan(children: [
+                                  WidgetSpan(
+                                      child: Icon(
+                                    Icons.star,
+                                    color: Color.fromARGB(255, 40, 178, 45),
+                                    size: 25,
+                                  )),
+                                  TextSpan(
+                                      text: "  4.9",
+                                      style: TextStyle(
+                                        fontSize: 16,
+                                        color: Colors.black,
+                                      )),
+                                  TextSpan(
+                                      text: " Rated by 2000+",
+                                      style: TextStyle(
+                                          color: Colors.black,
+                                          fontSize: 16,
+                                          fontWeight: FontWeight.w400)),
+                                ])),
+                                Text("patients",
                                     style: TextStyle(
                                         color: Colors.black,
                                         fontSize: 16,
                                         fontWeight: FontWeight.w400)),
-                              ])),
-                              Text("patients",
-                                  style: TextStyle(
-                                      color: Colors.black,
-                                      fontSize: 16,
-                                      fontWeight: FontWeight.w400)),
-                              Text("Qualification:",
-                                  style: TextStyle(
-                                      fontSize: 18,
-                                      fontWeight: FontWeight.w600)),
-                              Text("MBBS,MD-Dermatology,(FAM)",
-                                  style: TextStyle(
-                                      fontSize: 16,
-                                      fontWeight: FontWeight.w200)),
-                            ]),
+                                Text("Qualification:",
+                                    style: TextStyle(
+                                        fontSize: 18,
+                                        fontWeight: FontWeight.w600)),
+                                Text("MBBS,MD-Dermatology,(FAM)",
+                                    style: TextStyle(
+                                        fontSize: 16,
+                                        fontWeight: FontWeight.w200)),
+                              ]),
+                        ),
                       ],
                     )),
               ),
@@ -461,28 +481,48 @@ class _mouthState extends State<mouth> {
                           style: ElevatedButton.styleFrom(
                             primary: Color.fromARGB(255, 40, 91, 178),
                           ),
-                          onPressed: () {},
+                          onPressed: () {
+                            Navigator.push(context,
+                                MaterialPageRoute(builder: (context) {
+                              return (pay(time: "4:30 PM"));
+                            }));
+                          },
                           child: Text("4:30 PM",
                               style: TextStyle(fontWeight: FontWeight.w400))),
                       ElevatedButton(
                           style: ElevatedButton.styleFrom(
                             primary: Color.fromARGB(255, 40, 91, 178),
                           ),
-                          onPressed: () {},
+                          onPressed: () {
+                            Navigator.push(context,
+                                MaterialPageRoute(builder: (context) {
+                              return (pay(time: "6:00 PM"));
+                            }));
+                          },
                           child: Text("6:00 PM",
                               style: TextStyle(fontWeight: FontWeight.w400))),
                       ElevatedButton(
                           style: ElevatedButton.styleFrom(
                             primary: Color.fromARGB(255, 40, 91, 178),
                           ),
-                          onPressed: () {},
+                          onPressed: () {
+                            Navigator.push(context,
+                                MaterialPageRoute(builder: (context) {
+                              return (pay(time: "7:30 PM"));
+                            }));
+                          },
                           child: Text("7:30 PM",
                               style: TextStyle(fontWeight: FontWeight.w400))),
                       ElevatedButton(
                           style: ElevatedButton.styleFrom(
                             primary: Color.fromARGB(255, 40, 91, 178),
                           ),
-                          onPressed: () {},
+                          onPressed: () {
+                            Navigator.push(context,
+                                MaterialPageRoute(builder: (context) {
+                              return (pay(time: "9:00 PM"));
+                            }));
+                          },
                           child: Text("9:00 PM",
                               style: TextStyle(fontWeight: FontWeight.w400)))
                     ],
@@ -560,67 +600,69 @@ class _snoringState extends State<snoring> {
                             width: 120,
                           ),
                         ),
-                        Column(
-                            mainAxisAlignment: MainAxisAlignment.center,
-                            children: [
-                              Text(
-                                "Dr.shilpa singh",
-                                style: TextStyle(
-                                  fontSize: 18,
-                                  fontFamily: "Oswald",
-                                ),
-                              ),
-                              Text("otorhinolaryngologist",
+                        Flexible(
+                          child: Column(
+                              mainAxisAlignment: MainAxisAlignment.center,
+                              children: [
+                                Text(
+                                  "Dr. Shilpa singh",
                                   style: TextStyle(
-                                      fontSize: 16,
-                                      fontFamily: "Ibarra Real Nova",
-                                      color: Color.fromARGB(95, 26, 25, 25),
-                                      decoration: TextDecoration.underline)),
-                              Padding(
-                                padding: const EdgeInsets.only(top: 2),
-                                child: Text("8 years experience ",
+                                    fontSize: 18,
+                                    fontFamily: "Oswald",
+                                  ),
+                                ),
+                                Text("otorhinolaryngologist",
                                     style: TextStyle(
-                                      fontSize: 14,
-                                      fontFamily: "Ibarra Real Nova",
-                                      color: Colors.black,
-                                      fontWeight: FontWeight.w600,
-                                    )),
-                              ),
-                              RichText(
-                                  text: TextSpan(children: [
-                                WidgetSpan(
-                                    child: Icon(
-                                  Icons.star,
-                                  color: Color.fromARGB(255, 40, 178, 45),
-                                  size: 25,
-                                )),
-                                TextSpan(
-                                    text: "  4.9",
-                                    style: TextStyle(
-                                      fontSize: 16,
-                                      color: Colors.black,
-                                    )),
-                                TextSpan(
-                                    text: " Rated by 2000+",
+                                        fontSize: 16,
+                                        fontFamily: "Ibarra Real Nova",
+                                        color: Color.fromARGB(95, 26, 25, 25),
+                                        decoration: TextDecoration.underline)),
+                                Padding(
+                                  padding: const EdgeInsets.only(top: 2),
+                                  child: Text("8 years experience ",
+                                      style: TextStyle(
+                                        fontSize: 14,
+                                        fontFamily: "Ibarra Real Nova",
+                                        color: Colors.black,
+                                        fontWeight: FontWeight.w600,
+                                      )),
+                                ),
+                                RichText(
+                                    text: TextSpan(children: [
+                                  WidgetSpan(
+                                      child: Icon(
+                                    Icons.star,
+                                    color: Color.fromARGB(255, 40, 178, 45),
+                                    size: 25,
+                                  )),
+                                  TextSpan(
+                                      text: "  4.9",
+                                      style: TextStyle(
+                                        fontSize: 16,
+                                        color: Colors.black,
+                                      )),
+                                  TextSpan(
+                                      text: " Rated by 2000+",
+                                      style: TextStyle(
+                                          color: Colors.black,
+                                          fontSize: 16,
+                                          fontWeight: FontWeight.w400)),
+                                ])),
+                                Text("patients",
                                     style: TextStyle(
                                         color: Colors.black,
                                         fontSize: 16,
                                         fontWeight: FontWeight.w400)),
-                              ])),
-                              Text("patients",
-                                  style: TextStyle(
-                                      color: Colors.black,
-                                      fontSize: 16,
-                                      fontWeight: FontWeight.w400)),
-                              Text("Qualification:",
-                                  style: TextStyle(
-                                      fontSize: 18,
-                                      fontWeight: FontWeight.w600)),
-                              Text("MBBS,MS-ENT",
-                                  style: TextStyle(
-                                      fontSize: 16,
-                                      fontWeight: FontWeight.w200)),
-                            ]),
+                                Text("Qualification:",
+                                    style: TextStyle(
+                                        fontSize: 18,
+                                        fontWeight: FontWeight.w600)),
+                                Text("MBBS,MS-ENT",
+                                    style: TextStyle(
+                                        fontSize: 16,
+                                        fontWeight: FontWeight.w200)),
+                              ]),
+                        ),
                       ],
                     )),
               ),
@@ -705,28 +747,48 @@ class _snoringState extends State<snoring> {
                           style: ElevatedButton.styleFrom(
                             primary: Color.fromARGB(255, 40, 91, 178),
                           ),
-                          onPressed: () {},
+                          onPressed: () {
+                            Navigator.push(context,
+                                MaterialPageRoute(builder: (context) {
+                              return (pay(time: "4:30 PM"));
+                            }));
+                          },
                           child: Text("4:30 PM",
                               style: TextStyle(fontWeight: FontWeight.w400))),
                       ElevatedButton(
                           style: ElevatedButton.styleFrom(
                             primary: Color.fromARGB(255, 40, 91, 178),
                           ),
-                          onPressed: () {},
+                          onPressed: () {
+                            Navigator.push(context,
+                                MaterialPageRoute(builder: (context) {
+                              return (pay(time: "6:00 PM"));
+                            }));
+                          },
                           child: Text("6:00 PM",
                               style: TextStyle(fontWeight: FontWeight.w400))),
                       ElevatedButton(
                           style: ElevatedButton.styleFrom(
                             primary: Color.fromARGB(255, 40, 91, 178),
                           ),
-                          onPressed: () {},
+                          onPressed: () {
+                            Navigator.push(context,
+                                MaterialPageRoute(builder: (context) {
+                              return (pay(time: "7:30 PM"));
+                            }));
+                          },
                           child: Text("7:30 PM",
                               style: TextStyle(fontWeight: FontWeight.w400))),
                       ElevatedButton(
                           style: ElevatedButton.styleFrom(
                             primary: Color.fromARGB(255, 40, 91, 178),
                           ),
-                          onPressed: () {},
+                          onPressed: () {
+                            Navigator.push(context,
+                                MaterialPageRoute(builder: (context) {
+                              return (pay(time: "9:00 PM"));
+                            }));
+                          },
                           child: Text("9:00 PM",
                               style: TextStyle(fontWeight: FontWeight.w400)))
                     ],
@@ -804,67 +866,69 @@ class _hearingState extends State<hearing> {
                             width: 120,
                           ),
                         ),
-                        Column(
-                            mainAxisAlignment: MainAxisAlignment.center,
-                            children: [
-                              Text(
-                                "Dr.Krish Raj",
-                                style: TextStyle(
-                                  fontSize: 18,
-                                  fontFamily: "Oswald",
-                                ),
-                              ),
-                              Text("otorhinolaryngologist",
+                        Flexible(
+                          child: Column(
+                              mainAxisAlignment: MainAxisAlignment.center,
+                              children: [
+                                Text(
+                                  "Dr. Krish Raj",
                                   style: TextStyle(
-                                      fontSize: 16,
-                                      fontFamily: "Ibarra Real Nova",
-                                      color: Color.fromARGB(95, 26, 25, 25),
-                                      decoration: TextDecoration.underline)),
-                              Padding(
-                                padding: const EdgeInsets.only(top: 2),
-                                child: Text("8 years experience ",
+                                    fontSize: 18,
+                                    fontFamily: "Oswald",
+                                  ),
+                                ),
+                                Text("otorhinolaryngologist",
                                     style: TextStyle(
-                                      fontSize: 14,
-                                      fontFamily: "Ibarra Real Nova",
-                                      color: Colors.black,
-                                      fontWeight: FontWeight.w600,
-                                    )),
-                              ),
-                              RichText(
-                                  text: TextSpan(children: [
-                                WidgetSpan(
-                                    child: Icon(
-                                  Icons.star,
-                                  color: Color.fromARGB(255, 40, 178, 45),
-                                  size: 25,
-                                )),
-                                TextSpan(
-                                    text: "  4.9",
-                                    style: TextStyle(
-                                      fontSize: 16,
-                                      color: Colors.black,
-                                    )),
-                                TextSpan(
-                                    text: " Rated by 2000+",
+                                        fontSize: 16,
+                                        fontFamily: "Ibarra Real Nova",
+                                        color: Color.fromARGB(95, 26, 25, 25),
+                                        decoration: TextDecoration.underline)),
+                                Padding(
+                                  padding: const EdgeInsets.only(top: 2),
+                                  child: Text("8 years experience ",
+                                      style: TextStyle(
+                                        fontSize: 14,
+                                        fontFamily: "Ibarra Real Nova",
+                                        color: Colors.black,
+                                        fontWeight: FontWeight.w600,
+                                      )),
+                                ),
+                                RichText(
+                                    text: TextSpan(children: [
+                                  WidgetSpan(
+                                      child: Icon(
+                                    Icons.star,
+                                    color: Color.fromARGB(255, 40, 178, 45),
+                                    size: 25,
+                                  )),
+                                  TextSpan(
+                                      text: "  4.9",
+                                      style: TextStyle(
+                                        fontSize: 16,
+                                        color: Colors.black,
+                                      )),
+                                  TextSpan(
+                                      text: " Rated by 2000+",
+                                      style: TextStyle(
+                                          color: Colors.black,
+                                          fontSize: 16,
+                                          fontWeight: FontWeight.w400)),
+                                ])),
+                                Text("patients",
                                     style: TextStyle(
                                         color: Colors.black,
                                         fontSize: 16,
                                         fontWeight: FontWeight.w400)),
-                              ])),
-                              Text("patients",
-                                  style: TextStyle(
-                                      color: Colors.black,
-                                      fontSize: 16,
-                                      fontWeight: FontWeight.w400)),
-                              Text("Qualification:",
-                                  style: TextStyle(
-                                      fontSize: 18,
-                                      fontWeight: FontWeight.w600)),
-                              Text("MBBS,MS-ENT",
-                                  style: TextStyle(
-                                      fontSize: 16,
-                                      fontWeight: FontWeight.w200)),
-                            ]),
+                                Text("Qualification:",
+                                    style: TextStyle(
+                                        fontSize: 18,
+                                        fontWeight: FontWeight.w600)),
+                                Text("MBBS,MS-ENT",
+                                    style: TextStyle(
+                                        fontSize: 16,
+                                        fontWeight: FontWeight.w200)),
+                              ]),
+                        ),
                       ],
                     )),
               ),
@@ -949,28 +1013,48 @@ class _hearingState extends State<hearing> {
                           style: ElevatedButton.styleFrom(
                             primary: Color.fromARGB(255, 40, 91, 178),
                           ),
-                          onPressed: () {},
+                          onPressed: () {
+                            Navigator.push(context,
+                                MaterialPageRoute(builder: (context) {
+                              return (pay(time: "4:30 PM"));
+                            }));
+                          },
                           child: Text("4:30 PM",
                               style: TextStyle(fontWeight: FontWeight.w400))),
                       ElevatedButton(
                           style: ElevatedButton.styleFrom(
                             primary: Color.fromARGB(255, 40, 91, 178),
                           ),
-                          onPressed: () {},
+                          onPressed: () {
+                            Navigator.push(context,
+                                MaterialPageRoute(builder: (context) {
+                              return (pay(time: "6:00 PM"));
+                            }));
+                          },
                           child: Text("6:00 PM",
                               style: TextStyle(fontWeight: FontWeight.w400))),
                       ElevatedButton(
                           style: ElevatedButton.styleFrom(
                             primary: Color.fromARGB(255, 40, 91, 178),
                           ),
-                          onPressed: () {},
+                          onPressed: () {
+                            Navigator.push(context,
+                                MaterialPageRoute(builder: (context) {
+                              return (pay(time: "7:30 PM"));
+                            }));
+                          },
                           child: Text("7:30 PM",
                               style: TextStyle(fontWeight: FontWeight.w400))),
                       ElevatedButton(
                           style: ElevatedButton.styleFrom(
                             primary: Color.fromARGB(255, 40, 91, 178),
                           ),
-                          onPressed: () {},
+                          onPressed: () {
+                            Navigator.push(context,
+                                MaterialPageRoute(builder: (context) {
+                              return (pay(time: "9:00 PM"));
+                            }));
+                          },
                           child: Text("9:00 PM",
                               style: TextStyle(fontWeight: FontWeight.w400)))
                     ],
