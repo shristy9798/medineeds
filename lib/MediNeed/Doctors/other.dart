@@ -2,6 +2,8 @@
 
 import 'package:flutter/material.dart';
 
+import '../3.payment.dart';
+
 void main() {
   runApp(MaterialApp(debugShowCheckedModeBanner: false, home: ped()));
 }
@@ -217,28 +219,48 @@ class _pedState extends State<ped> {
                           style: ElevatedButton.styleFrom(
                             primary: Color.fromARGB(255, 40, 91, 178),
                           ),
-                          onPressed: () {},
+                          onPressed: () {
+                            Navigator.push(context,
+                                MaterialPageRoute(builder: (context) {
+                              return (pay(time: "4:30 PM"));
+                            }));
+                          },
                           child: Text("4:30 PM",
                               style: TextStyle(fontWeight: FontWeight.w400))),
                       ElevatedButton(
                           style: ElevatedButton.styleFrom(
                             primary: Color.fromARGB(255, 40, 91, 178),
                           ),
-                          onPressed: () {},
+                          onPressed: () {
+                            Navigator.push(context,
+                                MaterialPageRoute(builder: (context) {
+                              return (pay(time: "6:00 PM"));
+                            }));
+                          },
                           child: Text("6:00 PM",
                               style: TextStyle(fontWeight: FontWeight.w400))),
                       ElevatedButton(
                           style: ElevatedButton.styleFrom(
                             primary: Color.fromARGB(255, 40, 91, 178),
                           ),
-                          onPressed: () {},
+                          onPressed: () {
+                            Navigator.push(context,
+                                MaterialPageRoute(builder: (context) {
+                              return (pay(time: "7:30 PM"));
+                            }));
+                          },
                           child: Text("7:30 PM",
                               style: TextStyle(fontWeight: FontWeight.w400))),
                       ElevatedButton(
                           style: ElevatedButton.styleFrom(
                             primary: Color.fromARGB(255, 40, 91, 178),
                           ),
-                          onPressed: () {},
+                          onPressed: () {
+                            Navigator.push(context,
+                                MaterialPageRoute(builder: (context) {
+                              return (pay(time: "9:00 PM"));
+                            }));
+                          },
                           child: Text("9:00 PM",
                               style: TextStyle(fontWeight: FontWeight.w400)))
                     ],
@@ -461,28 +483,48 @@ class _gynoState extends State<gyno> {
                           style: ElevatedButton.styleFrom(
                             primary: Color.fromARGB(255, 40, 91, 178),
                           ),
-                          onPressed: () {},
+                          onPressed: () {
+                            Navigator.push(context,
+                                MaterialPageRoute(builder: (context) {
+                              return (pay(time: "4:30 PM"));
+                            }));
+                          },
                           child: Text("4:30 PM",
                               style: TextStyle(fontWeight: FontWeight.w400))),
                       ElevatedButton(
                           style: ElevatedButton.styleFrom(
                             primary: Color.fromARGB(255, 40, 91, 178),
                           ),
-                          onPressed: () {},
+                          onPressed: () {
+                            Navigator.push(context,
+                                MaterialPageRoute(builder: (context) {
+                              return (pay(time: "6:00 PM"));
+                            }));
+                          },
                           child: Text("6:00 PM",
                               style: TextStyle(fontWeight: FontWeight.w400))),
                       ElevatedButton(
                           style: ElevatedButton.styleFrom(
                             primary: Color.fromARGB(255, 40, 91, 178),
                           ),
-                          onPressed: () {},
+                          onPressed: () {
+                            Navigator.push(context,
+                                MaterialPageRoute(builder: (context) {
+                              return (pay(time: "7:30 PM"));
+                            }));
+                          },
                           child: Text("7:30 PM",
                               style: TextStyle(fontWeight: FontWeight.w400))),
                       ElevatedButton(
                           style: ElevatedButton.styleFrom(
                             primary: Color.fromARGB(255, 40, 91, 178),
                           ),
-                          onPressed: () {},
+                          onPressed: () {
+                            Navigator.push(context,
+                                MaterialPageRoute(builder: (context) {
+                              return (pay(time: "9:00 PM"));
+                            }));
+                          },
                           child: Text("9:00 PM",
                               style: TextStyle(fontWeight: FontWeight.w400)))
                     ],
@@ -705,28 +747,48 @@ class _psyState extends State<psy> {
                           style: ElevatedButton.styleFrom(
                             primary: Color.fromARGB(255, 40, 91, 178),
                           ),
-                          onPressed: () {},
+                          onPressed: () {
+                            Navigator.push(context,
+                                MaterialPageRoute(builder: (context) {
+                              return (pay(time: "4:30 PM"));
+                            }));
+                          },
                           child: Text("4:30 PM",
                               style: TextStyle(fontWeight: FontWeight.w400))),
                       ElevatedButton(
                           style: ElevatedButton.styleFrom(
                             primary: Color.fromARGB(255, 40, 91, 178),
                           ),
-                          onPressed: () {},
+                          onPressed: () {
+                            Navigator.push(context,
+                                MaterialPageRoute(builder: (context) {
+                              return (pay(time: "6:00 PM"));
+                            }));
+                          },
                           child: Text("6:00 PM",
                               style: TextStyle(fontWeight: FontWeight.w400))),
                       ElevatedButton(
                           style: ElevatedButton.styleFrom(
                             primary: Color.fromARGB(255, 40, 91, 178),
                           ),
-                          onPressed: () {},
+                          onPressed: () {
+                            Navigator.push(context,
+                                MaterialPageRoute(builder: (context) {
+                              return (pay(time: "7:30 PM"));
+                            }));
+                          },
                           child: Text("7:30 PM",
                               style: TextStyle(fontWeight: FontWeight.w400))),
                       ElevatedButton(
                           style: ElevatedButton.styleFrom(
                             primary: Color.fromARGB(255, 40, 91, 178),
                           ),
-                          onPressed: () {},
+                          onPressed: () {
+                            Navigator.push(context,
+                                MaterialPageRoute(builder: (context) {
+                              return (pay(time: "9:00 PM"));
+                            }));
+                          },
                           child: Text("9:00 PM",
                               style: TextStyle(fontWeight: FontWeight.w400)))
                     ],
@@ -949,28 +1011,48 @@ class _dentalState extends State<dental> {
                           style: ElevatedButton.styleFrom(
                             primary: Color.fromARGB(255, 40, 91, 178),
                           ),
-                          onPressed: () {},
+                          onPressed: () {
+                            Navigator.push(context,
+                                MaterialPageRoute(builder: (context) {
+                              return (pay(time: "4:30 PM"));
+                            }));
+                          },
                           child: Text("4:30 PM",
                               style: TextStyle(fontWeight: FontWeight.w400))),
                       ElevatedButton(
                           style: ElevatedButton.styleFrom(
                             primary: Color.fromARGB(255, 40, 91, 178),
                           ),
-                          onPressed: () {},
+                          onPressed: () {
+                            Navigator.push(context,
+                                MaterialPageRoute(builder: (context) {
+                              return (pay(time: "6:00 PM"));
+                            }));
+                          },
                           child: Text("6:00 PM",
                               style: TextStyle(fontWeight: FontWeight.w400))),
                       ElevatedButton(
                           style: ElevatedButton.styleFrom(
                             primary: Color.fromARGB(255, 40, 91, 178),
                           ),
-                          onPressed: () {},
+                          onPressed: () {
+                            Navigator.push(context,
+                                MaterialPageRoute(builder: (context) {
+                              return (pay(time: "7:30 PM"));
+                            }));
+                          },
                           child: Text("7:30 PM",
                               style: TextStyle(fontWeight: FontWeight.w400))),
                       ElevatedButton(
                           style: ElevatedButton.styleFrom(
                             primary: Color.fromARGB(255, 40, 91, 178),
                           ),
-                          onPressed: () {},
+                          onPressed: () {
+                            Navigator.push(context,
+                                MaterialPageRoute(builder: (context) {
+                              return (pay(time: "9:00 PM"));
+                            }));
+                          },
                           child: Text("9:00 PM",
                               style: TextStyle(fontWeight: FontWeight.w400)))
                     ],
@@ -1193,28 +1275,48 @@ class _pulState extends State<pul> {
                           style: ElevatedButton.styleFrom(
                             primary: Color.fromARGB(255, 40, 91, 178),
                           ),
-                          onPressed: () {},
+                          onPressed: () {
+                            Navigator.push(context,
+                                MaterialPageRoute(builder: (context) {
+                              return (pay(time: "4:30 PM"));
+                            }));
+                          },
                           child: Text("4:30 PM",
                               style: TextStyle(fontWeight: FontWeight.w400))),
                       ElevatedButton(
                           style: ElevatedButton.styleFrom(
                             primary: Color.fromARGB(255, 40, 91, 178),
                           ),
-                          onPressed: () {},
+                          onPressed: () {
+                            Navigator.push(context,
+                                MaterialPageRoute(builder: (context) {
+                              return (pay(time: "6:00 PM"));
+                            }));
+                          },
                           child: Text("6:00 PM",
                               style: TextStyle(fontWeight: FontWeight.w400))),
                       ElevatedButton(
                           style: ElevatedButton.styleFrom(
                             primary: Color.fromARGB(255, 40, 91, 178),
                           ),
-                          onPressed: () {},
+                          onPressed: () {
+                            Navigator.push(context,
+                                MaterialPageRoute(builder: (context) {
+                              return (pay(time: "7:30 PM"));
+                            }));
+                          },
                           child: Text("7:30 PM",
                               style: TextStyle(fontWeight: FontWeight.w400))),
                       ElevatedButton(
                           style: ElevatedButton.styleFrom(
                             primary: Color.fromARGB(255, 40, 91, 178),
                           ),
-                          onPressed: () {},
+                          onPressed: () {
+                            Navigator.push(context,
+                                MaterialPageRoute(builder: (context) {
+                              return (pay(time: "9:00 PM"));
+                            }));
+                          },
                           child: Text("9:00 PM",
                               style: TextStyle(fontWeight: FontWeight.w400)))
                     ],
@@ -1297,7 +1399,7 @@ class _dietState extends State<diet> {
                               mainAxisAlignment: MainAxisAlignment.center,
                               children: [
                                 Text(
-                                  "Dr.Roshni Senghal",
+                                  "Dr. Roshni Senghal",
                                   style: TextStyle(
                                     fontSize: 18,
                                     fontFamily: "Oswald",
@@ -1443,28 +1545,48 @@ class _dietState extends State<diet> {
                           style: ElevatedButton.styleFrom(
                             primary: Color.fromARGB(255, 40, 91, 178),
                           ),
-                          onPressed: () {},
+                          onPressed: () {
+                            Navigator.push(context,
+                                MaterialPageRoute(builder: (context) {
+                              return (pay(time: "4:30 PM"));
+                            }));
+                          },
                           child: Text("4:30 PM",
                               style: TextStyle(fontWeight: FontWeight.w400))),
                       ElevatedButton(
                           style: ElevatedButton.styleFrom(
                             primary: Color.fromARGB(255, 40, 91, 178),
                           ),
-                          onPressed: () {},
+                          onPressed: () {
+                            Navigator.push(context,
+                                MaterialPageRoute(builder: (context) {
+                              return (pay(time: "6:00 PM"));
+                            }));
+                          },
                           child: Text("6:00 PM",
                               style: TextStyle(fontWeight: FontWeight.w400))),
                       ElevatedButton(
                           style: ElevatedButton.styleFrom(
                             primary: Color.fromARGB(255, 40, 91, 178),
                           ),
-                          onPressed: () {},
+                          onPressed: () {
+                            Navigator.push(context,
+                                MaterialPageRoute(builder: (context) {
+                              return (pay(time: "7:30 PM"));
+                            }));
+                          },
                           child: Text("7:30 PM",
                               style: TextStyle(fontWeight: FontWeight.w400))),
                       ElevatedButton(
                           style: ElevatedButton.styleFrom(
                             primary: Color.fromARGB(255, 40, 91, 178),
                           ),
-                          onPressed: () {},
+                          onPressed: () {
+                            Navigator.push(context,
+                                MaterialPageRoute(builder: (context) {
+                              return (pay(time: "9:00 PM"));
+                            }));
+                          },
                           child: Text("9:00 PM",
                               style: TextStyle(fontWeight: FontWeight.w400)))
                     ],
