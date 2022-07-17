@@ -1,12 +1,14 @@
-// ignore_for_file: prefer_const_constructors
+// ignore_for_file: prefer_const_constructors, sort_child_properties_last
 
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
+
 import 'package:medineeds/MediNeed/Doctors/ent.dart';
 import 'package:medineeds/MediNeed/Doctors/general.dart';
 import 'package:medineeds/MediNeed/Doctors/ortho.dart';
 import 'package:medineeds/MediNeed/Doctors/other.dart';
+import 'package:medineeds/MediNeed/appoint.dart';
+import 'package:medineeds/MediNeed/help.dart';
+import 'package:medineeds/MediNeed/login.dart';
 
 import 'Doctors/2dermatologist.dart';
 
@@ -25,7 +27,8 @@ class mainpage extends StatefulWidget {
 }
 
 class _mainpageState extends State<mainpage> {
-  var choices = ["Help", "Chat", "Feedback", "Appointments"];
+  var choices = ["Help", "Appointments","Sign Out"];
+  
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -40,11 +43,27 @@ class _mainpageState extends State<mainpage> {
           ),
           backgroundColor: Colors.orangeAccent,
           actions: [
-            PopupMenuButton(itemBuilder: (BuildContext context) {
-              return choices.map((String myChoice) {
-                return PopupMenuItem(child: Text(myChoice), value: myChoice);
-              }).toList();
-            })
+            PopupMenuButton(
+              itemBuilder: (BuildContext context) {
+                return choices.map((String myChoice) {
+                  return PopupMenuItem(child: Text(myChoice), value: myChoice);
+                }).toList();
+              },
+              onSelected: (value) {
+                if (value == 'Help') {
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: ((context) => help())));
+                }
+                if (value == 'Appointments') {
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: ((context) => appoint())));
+                }
+                if (value == 'Sign Out') {
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: ((context) => login())));
+                }
+              },
+            )
           ],
         ),
         body: Center(
