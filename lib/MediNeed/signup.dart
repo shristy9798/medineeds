@@ -1,10 +1,10 @@
 // ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables, avoid_init_to_null,
 import 'package:firebase_core/firebase_core.dart';
-
+import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:medineeds/MediNeed/2.mainpage.dart';
-import 'package:medineeds/MediNeed/signup.dart';
+import 'package:medineeds/MediNeed/login.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -12,47 +12,73 @@ void main() async {
 
   runApp(MaterialApp(
     debugShowCheckedModeBanner: false,
-    home: login(),
+    home: signup(),
   ));
 }
 
-class login extends StatefulWidget {
-  const login({Key? key}) : super(key: key);
+class signup extends StatefulWidget {
+  const signup({Key? key}) : super(key: key);
 
   @override
-  State<login> createState() => _loginState();
+  State<signup> createState() => _signupState();
 }
 
-class _loginState extends State<login> {
-  int s = 0;
-  String useremail = '';
+class _signupState extends State<signup> {
+  late bool success;
+  late String useremail;
   var st = true;
+
+  String? nameerror = null;
 
   String? mailerror = null;
 
+  String? phoneerror = null;
+
   String? passerror = null;
+
+  TextEditingController name = TextEditingController();
 
   TextEditingController email = TextEditingController();
 
+  TextEditingController phone = TextEditingController();
+
   TextEditingController pass = TextEditingController();
 
+  final firebase = FirebaseFirestore.instance;
   final FirebaseAuth _auth = FirebaseAuth.instance;
-  void signin() async {
-    final User? user = (await _auth.signInWithEmailAndPassword(
+
+  void register() async {
+    final User? user = (await _auth.createUserWithEmailAndPassword(
             email: email.text, password: pass.text))
         .user;
-    setState(() {
-      s = 3;
-    });
+
     if (user != null) {
       setState(() {
-        s = 2;
+        success = true;
         useremail = user.email!;
       });
     } else {
       setState(() {
-        s = 3;
+        success = false;
       });
+    }
+  }
+
+  void create() async {
+    print(name.text);
+    try {
+      await firebase
+          .collection("User")
+          // .doc()
+          .doc(phone.text)
+          .set({
+        "name": name.text,
+        "email": email.text,
+        "Phone": phone.text,
+        "pass": pass.text
+      });
+    } catch (e) {
+      print(e);
     }
   }
 
@@ -84,6 +110,33 @@ class _loginState extends State<login> {
             child: Column(
               children: [
                 TextField(
+                  controller: name,
+                  decoration: InputDecoration(
+                      errorText: nameerror,
+                      labelText: "Name",
+                      hintText: "Enter your name",
+                      labelStyle: TextStyle(
+                          fontSize: 20,
+                          color: Color.fromARGB(220, 45, 57, 121)),
+                      border: OutlineInputBorder(
+                          borderRadius: BorderRadius.circular(8),
+                          borderSide: BorderSide(
+                            color: Color.fromARGB(220, 45, 57, 121),
+                          )),
+                      focusedBorder: OutlineInputBorder(
+                        borderSide: const BorderSide(
+                          width: 2,
+                          color: Color.fromARGB(220, 45, 57, 121),
+                        ),
+                        borderRadius: BorderRadius.circular(8),
+                      ),
+                      suffixIcon: Icon(
+                        Icons.person,
+                        color: Color.fromARGB(220, 45, 57, 121),
+                      )),
+                ),
+                SizedBox(height: 35),
+                TextField(
                   controller: email,
                   decoration: InputDecoration(
                       hoverColor: Color.fromARGB(220, 45, 57, 121),
@@ -112,6 +165,35 @@ class _loginState extends State<login> {
                       )),
                 ),
                 SizedBox(height: 35),
+                TextField(
+                  controller: phone,
+                  maxLength: 10,
+                  decoration: InputDecoration(
+                    errorText: phoneerror,
+                    labelText: "Mobile no.",
+                    hintText: "Enter your Mobile no. ",
+                    labelStyle: TextStyle(
+                        fontSize: 20, color: Color.fromARGB(220, 45, 57, 121)),
+                    border: OutlineInputBorder(
+                        borderRadius: BorderRadius.circular(8),
+                        borderSide: BorderSide(
+                          color: Color.fromARGB(220, 45, 57, 121),
+                        )),
+                    focusedBorder: OutlineInputBorder(
+                      borderSide: const BorderSide(
+                        width: 2,
+                        color: Color.fromARGB(220, 45, 57, 121),
+                      ),
+                      borderRadius: BorderRadius.circular(8),
+                    ),
+                    suffixIcon: Icon(
+                      Icons.phone,
+                      color: Color.fromARGB(220, 45, 57, 121),
+                    ),
+                  ),
+                  keyboardType: TextInputType.number,
+                ),
+                SizedBox(height: 26),
                 TextField(
                   controller: pass,
                   maxLength: 6,
@@ -145,7 +227,7 @@ class _loginState extends State<login> {
                   ),
                   obscureText: st,
                 ),
-                SizedBox(height: 25),
+                SizedBox(height: 40),
                 ElevatedButton(
                     style: ElevatedButton.styleFrom(
                       primary: Color.fromARGB(220, 45, 57, 121),
@@ -153,81 +235,44 @@ class _loginState extends State<login> {
                     ),
                     onPressed: () async {
                       setState(() {
+                        if (name.text.isEmpty) {
+                          nameerror = "Enter your name";
+                        } else {
+                          nameerror = null;
+                        }
                         if (email.text.isEmpty) {
                           mailerror = "Enter valid mail id";
                         } else {
                           mailerror = null;
                         }
-
+                        if (phone.text.isEmpty) {
+                          phoneerror = "Enter valid mobile no.";
+                        } else if (phone.text.length != 10 &&
+                            phone.text.isNotEmpty) {
+                          phoneerror = "Number must consist 10 digits";
+                        } else {
+                          phoneerror = null;
+                        }
                         if (pass.text.isEmpty) {
                           passerror = "Enter password";
                         } else {
                           passerror = null;
                         }
                       });
-                      if (email.text.isNotEmpty && pass.text.isNotEmpty) {
-                        signin();
-                      }
-                      if (email.text.isNotEmpty &&
+
+                      if (name.text.isNotEmpty &&
+                          email.text.isNotEmpty &&
                           pass.text.isNotEmpty &&
-                          pass.text.length == 6 &&
-                          s == 2) {
-                        email.clear();
-                        pass.clear();
+                          phone.text.length == 10) {
+                        create();
+                        register();
                         Navigator.push(context,
                             MaterialPageRoute(builder: (context) {
-                          return (mainpage());
+                          return (login());
                         }));
-                      } else {
-                        setState(() {
-                          s = 1;
-                        });
                       }
-                      
                     },
-                    child: Text("Login")),
-                SizedBox(
-                  height: 10,
-                ),
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    Text(
-                      "New member ?",
-                      style:
-                          TextStyle(fontSize: 18, fontWeight: FontWeight.w600),
-                    ),
-                    SizedBox(
-                      width: 8,
-                    ),
-                    InkWell(
-                      onTap: () {
-                        Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                                builder: ((context) => signup())));
-                      },
-                      child: Text(
-                        "Sign Up now",
-                        style: TextStyle(
-                            color: Colors.deepPurpleAccent,
-                            fontSize: 18,
-                            fontWeight: FontWeight.w600),
-                      ),
-                    )
-                  ],
-                ),
-                SizedBox(height: 10),
-                Text(
-                  s == 0
-                      ? ''
-                      : (s == 2
-                          ? 'Signed in Successfully \n    Press login again'
-                          : (s == 1
-                              ? 'Sign in failed Try again'
-                              : 'Validating Please wait')),
-                  style: TextStyle(color: Colors.red),
-                ),
+                    child: Text("Sign Up")),
               ],
             ),
           )

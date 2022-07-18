@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "881639616776",
+    "project_id": "medineeds-56a02",
+    "storage_bucket": "medineeds-56a02.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:881639616776:android:1dc72381617ebeb248fcbd",
+        "android_client_info": {
+          "package_name": "com.example.medineeds"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "881639616776-a9lig0agk478q7r8bujcoqt2dk9bccr7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDCUXsFbaEhQ-tlwruFvUaboxqDHZS67-4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "881639616776-a9lig0agk478q7r8bujcoqt2dk9bccr7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

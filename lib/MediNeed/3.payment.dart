@@ -1,15 +1,18 @@
 // ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables
 
-
+import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:medineeds/MediNeed/2.mainpage.dart';
 
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp();
 
-void main() {
   runApp(MaterialApp(
     debugShowCheckedModeBanner: false,
     home: pay(
-      time: '',
+      time: 'hj',
     ),
   ));
 }
@@ -37,6 +40,23 @@ class _payState extends State<pay> {
   TextEditingController valid = TextEditingController();
 
   TextEditingController cvv = TextEditingController();
+  final firebase = FirebaseFirestore.instance;
+
+  void create() async {
+    print(name.text);
+    try {
+      await firebase
+          .collection("User")
+          // .doc()
+          .doc(name.text)
+          .set({
+        "name": name.text,
+        "Booked Appointment": widget.time,
+      });
+    } catch (e) {
+      print(e);
+    }
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -192,7 +212,7 @@ class _payState extends State<pay> {
                     primary: Color.fromARGB(220, 45, 57, 121),
                     minimumSize: const Size.fromHeight(50),
                   ),
-                  onPressed: () {
+                  onPressed: () async {
                     setState(() {
                       if (card.text.isEmpty) {
                         carderror = "Enter Card Number";
@@ -227,6 +247,7 @@ class _payState extends State<pay> {
                         cvv.text.length == 3 &&
                         valid.text.isNotEmpty &&
                         valid.text.length == 5) {
+                      create();
                       setState(() {
                         card.clear();
                         name.clear();
@@ -256,7 +277,7 @@ class _payState extends State<pay> {
             fontSize: 28),
       ),
       content: Text(
-          'Your Slot has been booked successfully\nSelected time slot : ${widget.time}\nDoctor will call you soon'),
+          'Your Slot has been booked successfully\nSelected time slot : ${widget.time}\nDoctor will call you soon.'),
       actions: [
         ElevatedButton(
             style: ElevatedButton.styleFrom(
