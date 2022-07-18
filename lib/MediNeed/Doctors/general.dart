@@ -31,7 +31,7 @@ class _feverState extends State<fever> {
               Container(
                   padding: const EdgeInsets.all(8.0),
                   child: Text(
-                    'You will be ok soon!!',
+                    'You will be ok!',
                     style: TextStyle(fontSize: 26),
                   )),
             ],
@@ -294,7 +294,7 @@ class _dizinessState extends State<diziness> {
               Container(
                   padding: const EdgeInsets.all(8.0),
                   child: Text(
-                    'You will be ok soon!!',
+                    'You will be ok!',
                     style: TextStyle(fontSize: 26),
                   )),
             ],
@@ -557,7 +557,7 @@ class _coughState extends State<cough> {
               Container(
                   padding: const EdgeInsets.all(8.0),
                   child: Text(
-                    'You will be ok soon!!',
+                    'You will be ok!',
                     style: TextStyle(fontSize: 26),
                   )),
             ],
@@ -820,7 +820,7 @@ class _minorState extends State<minor> {
               Container(
                   padding: const EdgeInsets.all(8.0),
                   child: Text(
-                    'You will be ok soon!!',
+                    'You will be ok!',
                     style: TextStyle(fontSize: 26),
                   )),
             ],

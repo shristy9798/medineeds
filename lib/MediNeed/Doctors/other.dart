@@ -32,7 +32,7 @@ class _pedState extends State<ped> {
               Container(
                   padding: const EdgeInsets.all(8.0),
                   child: Text(
-                    'You will be ok soon!!',
+                    'You will be ok!',
                     style: TextStyle(fontSize: 26),
                   )),
             ],
@@ -295,7 +295,7 @@ class _gynoState extends State<gyno> {
               Container(
                   padding: const EdgeInsets.all(8.0),
                   child: Text(
-                    'You will be ok soon!!',
+                    'You will be ok!',
                     style: TextStyle(fontSize: 26),
                   )),
             ],
@@ -559,7 +559,7 @@ class _psyState extends State<psy> {
               Container(
                   padding: const EdgeInsets.all(8.0),
                   child: Text(
-                    'You will be ok soon!!',
+                    'You will be ok!',
                     style: TextStyle(fontSize: 26),
                   )),
             ],
@@ -823,7 +823,7 @@ class _dentalState extends State<dental> {
               Container(
                   padding: const EdgeInsets.all(8.0),
                   child: Text(
-                    'You will be ok soon!!',
+                    'You will be ok!',
                     style: TextStyle(fontSize: 26),
                   )),
             ],
@@ -1087,7 +1087,7 @@ class _pulState extends State<pul> {
               Container(
                   padding: const EdgeInsets.all(8.0),
                   child: Text(
-                    'You will be ok soon!!',
+                    'You will be ok!',
                     style: TextStyle(fontSize: 26),
                   )),
             ],
@@ -1351,7 +1351,7 @@ class _dietState extends State<diet> {
               Container(
                   padding: const EdgeInsets.all(8.0),
                   child: Text(
-                    'You will be ok soon!!',
+                    'You will be ok!',
                     style: TextStyle(fontSize: 26),
                   )),
             ],

@@ -31,7 +31,7 @@ class _acneState extends State<acne> {
               Container(
                   padding: const EdgeInsets.all(8.0),
                   child: Text(
-                    'You will be ok soon!!',
+                    'You will be ok!',
                     style: TextStyle(fontSize: 26),
                   )),
             ],
@@ -295,7 +295,7 @@ class _hairState extends State<hair> {
               Container(
                   padding: const EdgeInsets.all(8.0),
                   child: Text(
-                    'You will be ok soon!!',
+                    'You will be ok!',
                     style: TextStyle(fontSize: 26),
                   )),
             ],
@@ -558,7 +558,7 @@ class _skincareState extends State<skincare> {
               Container(
                   padding: const EdgeInsets.all(8.0),
                   child: Text(
-                    'You will be ok soon!!',
+                    'You will be ok!',
                     style: TextStyle(fontSize: 26),
                   )),
             ],
@@ -821,7 +821,7 @@ class _vitiligoState extends State<vitiligo> {
               Container(
                   padding: const EdgeInsets.all(8.0),
                   child: Text(
-                    'You will be ok soon!!',
+                    'You will be ok!',
                     style: TextStyle(fontSize: 26),
                   )),
             ],

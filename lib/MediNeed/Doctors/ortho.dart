@@ -31,7 +31,7 @@ class _kneeState extends State<knee> {
               Container(
                   padding: const EdgeInsets.all(8.0),
                   child: Text(
-                    'You will be ok soon!!',
+                    'You will be ok!',
                     style: TextStyle(fontSize: 26),
                   )),
             ],
@@ -296,7 +296,7 @@ class _shoulderState extends State<shoulder> {
               Container(
                   padding: const EdgeInsets.all(8.0),
                   child: Text(
-                    'You will be ok soon!!',
+                    'You will be ok!',
                     style: TextStyle(fontSize: 26),
                   )),
             ],
@@ -562,7 +562,7 @@ class _legState extends State<leg> {
               Container(
                   padding: const EdgeInsets.all(8.0),
                   child: Text(
-                    'You will be ok soon!!',
+                    'You will be ok!',
                     style: TextStyle(fontSize: 26),
                   )),
             ],
@@ -828,7 +828,7 @@ class _carpolState extends State<carpol> {
               Container(
                   padding: const EdgeInsets.all(8.0),
                   child: Text(
-                    'You will be ok soon!!',
+                    'You will be ok!',
                     style: TextStyle(fontSize: 26),
                   )),
             ],

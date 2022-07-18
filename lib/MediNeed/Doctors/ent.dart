@@ -31,7 +31,7 @@ class _soarState extends State<soar> {
               Container(
                   padding: const EdgeInsets.all(8.0),
                   child: Text(
-                    'You will be ok soon!!',
+                    'You will be ok!',
                     style: TextStyle(fontSize: 26),
                   )),
             ],
@@ -291,7 +291,7 @@ class _mouthState extends State<mouth> {
               Container(
                   padding: const EdgeInsets.all(8.0),
                   child: Text(
-                    'You will be ok soon!!',
+                    'You will be ok!',
                     style: TextStyle(fontSize: 26),
                   )),
             ],
@@ -557,7 +557,7 @@ class _snoringState extends State<snoring> {
               Container(
                   padding: const EdgeInsets.all(8.0),
                   child: Text(
-                    'You will be ok soon!!',
+                    'You will be ok!',
                     style: TextStyle(fontSize: 26),
                   )),
             ],
@@ -823,7 +823,7 @@ class _hearingState extends State<hearing> {
               Container(
                   padding: const EdgeInsets.all(8.0),
                   child: Text(
-                    'You will be ok soon!!',
+                    'You will be ok!',
                     style: TextStyle(fontSize: 26),
                   )),
             ],
