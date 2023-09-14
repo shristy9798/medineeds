@@ -1,20 +1,20 @@
 // ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables, avoid_init_to_null,
-import 'package:firebase_core/firebase_core.dart';
-import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:firebase_auth/firebase_auth.dart';
+// import 'package:firebase_core/firebase_core.dart';
+// import 'package:cloud_firestore/cloud_firestore.dart';
+// import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:medineeds/MediNeed/2.mainpage.dart';
 import 'package:medineeds/MediNeed/login.dart';
 
-void main() async {
-  WidgetsFlutterBinding.ensureInitialized();
-  await Firebase.initializeApp();
+// void main() async {
+//   WidgetsFlutterBinding.ensureInitialized();
+// //   await Firebase.initializeApp();
 
-  runApp(MaterialApp(
-    debugShowCheckedModeBanner: false,
-    home: signup(),
-  ));
-}
+//   runApp(MaterialApp(
+//     debugShowCheckedModeBanner: false,
+//     home: signup(),
+//   ));
+// }
 
 class signup extends StatefulWidget {
   const signup({Key? key}) : super(key: key);
@@ -44,43 +44,43 @@ class _signupState extends State<signup> {
 
   TextEditingController pass = TextEditingController();
 
-  final firebase = FirebaseFirestore.instance;
-  final FirebaseAuth _auth = FirebaseAuth.instance;
+  // final firebase = FirebaseFirestore.instance;
+  // final FirebaseAuth _auth = FirebaseAuth.instance;
 
-  void register() async {
-    final User? user = (await _auth.createUserWithEmailAndPassword(
-            email: email.text, password: pass.text))
-        .user;
+  // void register() async {
+  //   final User? user = (await _auth.createUserWithEmailAndPassword(
+  //           email: email.text, password: pass.text))
+  //       .user;
 
-    if (user != null) {
-      setState(() {
-        success = true;
-        useremail = user.email!;
-      });
-    } else {
-      setState(() {
-        success = false;
-      });
-    }
-  }
+  //   if (user != null) {
+  //     setState(() {
+  //       success = true;
+  //       useremail = user.email!;
+  //     });
+  //   } else {
+  //     setState(() {
+  //       success = false;
+  //     });
+  //   }
+  // }
 
-  void create() async {
-    print(name.text);
-    try {
-      await firebase
-          .collection("User")
-          // .doc()
-          .doc(phone.text)
-          .set({
-        "name": name.text,
-        "email": email.text,
-        "Phone": phone.text,
-        "pass": pass.text
-      });
-    } catch (e) {
-      print(e);
-    }
-  }
+  // void create() async {
+  //   print(name.text);
+  //   try {
+  //     await firebase
+  //         .collection("User")
+  //         // .doc()
+  //         .doc(phone.text)
+  //         .set({
+  //       "name": name.text,
+  //       "email": email.text,
+  //       "Phone": phone.text,
+  //       "pass": pass.text
+  //     });
+  //   } catch (e) {
+  //     print(e);
+  //   }
+  // }
 
   @override
   Widget build(BuildContext context) {
@@ -264,8 +264,8 @@ class _signupState extends State<signup> {
                           email.text.isNotEmpty &&
                           pass.text.isNotEmpty &&
                           phone.text.length == 10) {
-                        create();
-                        register();
+                        // create();
+                        // register();
                         Navigator.push(context,
                             MaterialPageRoute(builder: (context) {
                           return (login());

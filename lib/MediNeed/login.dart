@@ -1,15 +1,15 @@
-// ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables, avoid_init_to_null,
-import 'package:firebase_core/firebase_core.dart';
+// // ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables, avoid_init_to_null,
+// import 'package:firebase_core/firebase_core.dart';
 
-import 'package:firebase_auth/firebase_auth.dart';
+// import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:medineeds/MediNeed/2.mainpage.dart';
 import 'package:medineeds/MediNeed/signup.dart';
 
-void main() async {
-  WidgetsFlutterBinding.ensureInitialized();
-  await Firebase.initializeApp();
-
+// void main() async {
+//   WidgetsFlutterBinding.ensureInitialized();
+//   await Firebase.initializeApp();
+void main(){
   runApp(MaterialApp(
     debugShowCheckedModeBanner: false,
     home: login(),
@@ -36,25 +36,25 @@ class _loginState extends State<login> {
 
   TextEditingController pass = TextEditingController();
 
-  final FirebaseAuth _auth = FirebaseAuth.instance;
-  void signin() async {
-    final User? user = (await _auth.signInWithEmailAndPassword(
-            email: email.text, password: pass.text))
-        .user;
-    setState(() {
-      s = 3;
-    });
-    if (user != null) {
-      setState(() {
-        s = 2;
-        useremail = user.email!;
-      });
-    } else {
-      setState(() {
-        s = 3;
-      });
-    }
-  }
+  // final FirebaseAuth _auth = FirebaseAuth.instance;
+  // void signin() async {
+  //   final User? user = (await _auth.signInWithEmailAndPassword(
+  //           email: email.text, password: pass.text))
+  //       .user;
+  //   setState(() {
+  //     s = 3;
+  //   });
+  //   if (user != null) {
+  //     setState(() {
+  //       s = 2;
+  //       useremail = user.email!;
+  //     });
+  //   } else {
+  //     setState(() {
+  //       s = 3;
+  //     });
+  //   }
+  // }
 
   @override
   Widget build(BuildContext context) {
@@ -166,7 +166,7 @@ class _loginState extends State<login> {
                         }
                       });
                       if (email.text.isNotEmpty && pass.text.isNotEmpty) {
-                        signin();
+                        // signin();
                       }
                       if (email.text.isNotEmpty &&
                           pass.text.isNotEmpty &&

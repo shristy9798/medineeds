@@ -1,21 +1,21 @@
 // ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables
 
-import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:firebase_core/firebase_core.dart';
+// import 'package:cloud_firestore/cloud_firestore.dart';
+// import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:medineeds/MediNeed/2.mainpage.dart';
 
-void main() async {
-  WidgetsFlutterBinding.ensureInitialized();
-  await Firebase.initializeApp();
+// void main() async {
+//   WidgetsFlutterBinding.ensureInitialized();
+//   await Firebase.initializeApp();
 
-  runApp(MaterialApp(
-    debugShowCheckedModeBanner: false,
-    home: pay(
-      time: 'hj',
-    ),
-  ));
-}
+//   runApp(MaterialApp(
+//     debugShowCheckedModeBanner: false,
+//     home: pay(
+//       time: 'hj',
+//     ),
+//   ));
+// }
 
 class pay extends StatefulWidget {
   pay({Key? key, required this.time}) : super(key: key);
@@ -40,23 +40,23 @@ class _payState extends State<pay> {
   TextEditingController valid = TextEditingController();
 
   TextEditingController cvv = TextEditingController();
-  final firebase = FirebaseFirestore.instance;
+  // final firebase = FirebaseFirestore.instance;
 
-  void create() async {
-    print(name.text);
-    try {
-      await firebase
-          .collection("User")
-          // .doc()
-          .doc(name.text)
-          .set({
-        "name": name.text,
-        "Booked Appointment": widget.time,
-      });
-    } catch (e) {
-      print(e);
-    }
-  }
+  // void create() async {
+  //   print(name.text);
+  //   try {
+  //     await firebase
+  //         .collection("User")
+  //         // .doc()
+  //         .doc(name.text)
+  //         .set({
+  //       "name": name.text,
+  //       "Booked Appointment": widget.time,
+  //     });
+  //   } catch (e) {
+  //     print(e);
+  //   }
+  // }
 
   @override
   Widget build(BuildContext context) {
@@ -247,7 +247,7 @@ class _payState extends State<pay> {
                         cvv.text.length == 3 &&
                         valid.text.isNotEmpty &&
                         valid.text.length == 5) {
-                      create();
+                      // create();
                       setState(() {
                         card.clear();
                         name.clear();
